@@ -1,6 +1,6 @@
 .a {
 	font-size:1.2rem;
-	padding: 1rem 1.6rem;
+	padding: 1rem 1.5rem;
 	text-align:center;
 	border: none;
 	border-radius: 1rem;
@@ -19,8 +19,9 @@
 	}
 
 	&:hover {
-		transform: translate(0, -2rem, 2rem);
 		-webkit-transform: translate(0, -2rem, 2rem);
+		transform: translateY(-.5rem) translateZ(2rem);
+		color: $white;
 	}
 
 }

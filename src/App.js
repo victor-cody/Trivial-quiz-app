@@ -10,6 +10,7 @@ import './assets/animate/_animations.scss'
 
 import './assets/sass/App.scss';
 import Home from "./components/Homepage/Home";
+import PreGame from "./components/Pre-Game/PreGame";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <Router>
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/categories' component={PreGame} />
       </Switch>
     </Router>
         

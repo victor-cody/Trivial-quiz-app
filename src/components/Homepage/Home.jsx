@@ -7,9 +7,11 @@ const Home = () => {
 			<div className="d-flex flex-column align-items-center justify-content-center">
 				<h1 className='text-capitalize display-4 text-center'>Ready To Challenge Your Mind?</h1>
 
-				<div className='mt-5 row justify-content-spacearound align-items-spacearound' >
-					<Link className="col-sm-9  a text-capitalize font-weight-bold btn mx-1 my-2">let's play</Link>
-					<Link className="col-sm-9  a text-capitalize font-weight-bold btn mx-1 my-2">check highscores</Link>
+				<div className='mt-5 w-100 row justify-content-center align-items-spacearound' >
+					<Link className="col-sm-7 a text-capitalize font-weight-bold btn my-3"
+					to='/categories'
+					>let's play</Link>
+					<Link className="col-sm-7 a text-capitalize font-weight-bold btn my-3">check highscores</Link>
 				</div>
 
 			</div>
