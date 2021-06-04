@@ -1,0 +1,22 @@
+.a {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: $white;
+	background-color: $red;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px ;
+
+	&:active, &:focus{
+		@extend .a;
+	}
+
+	&:hover {
+		transform: translate(0, -2rem, 2rem);
+		-webkit-transform: translate(0, -2rem, 2rem);
+	}
+
+}

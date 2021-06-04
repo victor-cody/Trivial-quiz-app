@@ -10,7 +10,6 @@ import './assets/animate/_animations.scss'
 
 import './assets/sass/App.scss';
 
-
 function App() {
 
   return (
