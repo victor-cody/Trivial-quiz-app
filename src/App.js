@@ -9,13 +9,16 @@ import './assets/bootstrap-icons/bootstrap-icons.css';
 import './assets/animate/_animations.scss'
 
 import './assets/sass/App.scss';
+import Home from "./components/Homepage/Home";
 
 function App() {
 
   return (
     <>
     <Router>
-
+      <Switch>
+        <Route path='/' exact component={Home} />
+      </Switch>
     </Router>
         
     </>
