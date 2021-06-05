@@ -1,4 +1,22 @@
 
+
 .category{
-	
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	color: #e0e5ec;
+	box-shadow: -7px -7px 20px 0px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0002,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px;
+
+	&:hover {
+		transform: translateY(-.8rem);
+	}
 }
