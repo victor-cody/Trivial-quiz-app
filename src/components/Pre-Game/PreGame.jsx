@@ -17,7 +17,7 @@ const PreGame = () => {
 				<li>Answer 20 Trivia Questions based on that category</li>
 				<li>You get 20 seconds time frame to answer each question. GoodLuck!!</li>
 			</ul>
-			<div className="row justify-content-center">
+			<div className="row mt-3 justify-content-center">
 				{
 					categories.map((category,id) => (
 						<GameCategory

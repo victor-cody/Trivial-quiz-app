@@ -3,7 +3,7 @@ import './game-category.scss';
 const GameCategory = ({ symbol, name, bg }) => {
 	return (
 
-		<div class="col-md-5 my-3 mx-2 py-4 rounded text-center category" style={ {
+		<div class="col-md-5 my-3 mx-2 py-4  text-center category" style={ {
 			backgroundColor:bg
 			} }>
 			<span className='display-4' >{symbol}</span>
