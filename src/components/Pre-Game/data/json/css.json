@@ -1,0 +1,12 @@
+[
+	{
+		"question": "What keyword is used to create an error?",
+		"answer": {
+			"choice1": "throw",
+			"choice2": "exception",
+			"choice3": "catch",
+			"choice4": "error"
+		},
+		"correct": 0
+	},
+]
