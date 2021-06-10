@@ -1,12 +1,61 @@
 [
 	{
-		"question": "What keyword is used to create an error?",
+		"question": "Using an attribute selector, how would you select an `<a>` element with a 'title' attribute?",
 		"answer": {
-			"choice1": "throw",
-			"choice2": "exception",
-			"choice3": "catch",
-			"choice4": "error"
+			"choice1": "a[title]{...}",
+			"choice2": " > title {...}",
+			"choice3": "a.title {...}",
+			"choice4": "a=title {...}"
 		},
 		"correct": 0
+	}, {
+		"question": "What is the line-height property primarily used for?",
+		"answer": {
+			"choice1": "to control the height of the space between two lines of content",
+			"choice2": "to control the height of the space between heading elements",
+			"choice3": "to control the height of the character size",
+			"choice4": "to control the width of the space between characters"
+		},
+		"correct": 0
+	},
+	{
+		"question": "Which is NOT true about class selectors?",
+		"answer": {
+			"choice1": "Multiple classes can be used within the same element.",
+			"choice2": "The same class can be used multiple times per page.",
+			"choice3": "Class selectors with a leading period",
+			"choice4": "Classes can be used multiple times per page but not within the same element."
+		},
+		"correct": 3
+	},
+	{
+		"question": "How would you make the first letter of every paragraph on the page red?",
+		"answer": {
+			"choice1": "p::first-letter { color: red; }",
+			"choice2": "p:first-letter { color: red; }.",
+			"choice3": "first-letter::p { color: red; }",
+			"choice4": "first-letter:p { color: red; }"
+		},
+		"correct": 3
+	},
+	{
+		"question": "Which of the following is not a valid color value?",
+		"answer": {
+			"choice1": "color: #000",
+			"choice2": "color: rgb(0,0,0).",
+			"choice3": "color: #000000",
+			"choice4": "color: 000000"
+		},
+		"correct": 3
+	},
+	{
+		"question": "When using Flexbox, what property and value is used to display flex items in a column?",
+		"answer": {
+			"choice1": "flex-flow: column; or flex-direction: column",
+			"choice2": "flex-flow: column;",
+			"choice3": "flex-column: auto;",
+			"choice4": "flex-direction: column;"
+		},
+		"correct": 3
 	},
 ]
