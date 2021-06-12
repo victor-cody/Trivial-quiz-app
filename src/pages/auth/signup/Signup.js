@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
+import Input from '../../../components/Input/Input';
 
-const SignUp = () => {
+const SignUpForm = () => {
 	const history = useHistory();
 
 	const [username, setUsername] = useState('')
@@ -11,10 +12,16 @@ const SignUp = () => {
 
 	const [error, setError] = useState('')
 	return (
-		<div>
-			
+		<div className="wrapper">
+			<div className="container">
+				<form action="" className="form">
+					<Input 
+					props
+					/>
+				</form>
+			</div>
 		</div>
 	);
 };
 
-export default SignUp;
+export default SignUpForm;
