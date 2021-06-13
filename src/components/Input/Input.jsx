@@ -1,7 +1,7 @@
 import React from "react";
 import './_input.scss';
 
-const Input = (props) => {
+const Input = ({props}) => {
 
   /*Shows the label*/
   const showLabel = (e) => {

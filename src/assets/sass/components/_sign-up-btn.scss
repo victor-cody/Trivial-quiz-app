@@ -1,0 +1,22 @@
+
+.sign__up_button {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+
+
+	&:hover &:after {
+		opacity: 1;
+		right: 0;
+	}
+
+	&:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: .5rem;
+		transition: 0.5s;
+	}
+
+}
