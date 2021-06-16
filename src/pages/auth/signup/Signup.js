@@ -7,6 +7,9 @@ import Input from "../../../components/Input/Input";
 const SignUpForm = (e) => {
 e.preventDefault()
 const history = useHistory();
+	if (localStorage.getItem('email')) setTimeout(() => {
+		history.push('/')
+	}, 1000);
 
 const [email, setEmail] = useState("");
 const [username, setUsername] = useState("");
@@ -45,7 +48,7 @@ async function signUpUser() {
 	try {
 		const res = await axios(config);
 		console.log(JSON.stringify(res.data))
-		history.push('/login')
+		history.push('/auth/login')
 	} catch (error) {
 		 console.log(error);
 	}

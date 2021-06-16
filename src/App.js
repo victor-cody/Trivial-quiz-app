@@ -14,6 +14,7 @@ import './assets/sass/App.scss';
 import Home from "./components/Homepage/Home";
 import SignUpForm from "./pages/auth/signup/Signup";
 import PreGame from "./components/Pre-Game/PreGame";
+import LoginForm from "./pages/auth/login/Login";
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
         <Router>
           <Switch>
             <Route path='/' exact component={Home} />
-            <Route path='/sign-up'  component={SignUpForm} />
+            <Route path='/auth/sign-up'  component={SignUpForm} />
+            <Route path='/auth/login' component={LoginForm} />
             <Route path='/categories' component={PreGame} />
           </Switch>
         </Router>
