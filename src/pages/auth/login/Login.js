@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import axios from 'axios';
 import Input from '../../../components/Input/Input';
-import { hashSync } from 'bcrypt';
+// import { hashSync } from 'bcrypt';
 
 const LoginForm = () => {
 
@@ -21,9 +21,9 @@ const LoginForm = () => {
 		"table": "users",
 		"records": [
 			{
-				"username": username,
+				// "username": username,
 				"email": email,
-				"password": hashSync(password, 10)
+				"password": password
 			}
 		]
 	});

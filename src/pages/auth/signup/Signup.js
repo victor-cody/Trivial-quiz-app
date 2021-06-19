@@ -1,11 +1,11 @@
-import {hashSync} from 'bcrypt';
+// import {hashSync} from 'bcrypt';
 import axios from "axios";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Input from "../../../components/Input/Input";
 
-const SignUpForm = (e) => {
-e.preventDefault()
+const SignUpForm = () => {
+
 const history = useHistory();
 	if (localStorage.getItem('email')) setTimeout(() => {
 		history.push('/')
@@ -26,7 +26,7 @@ const data = JSON.stringify({
       {
         "username" : username,
         "email": email,
-        "password":hashSync(password, 10)
+        "password":password
       }
     ]
 });
@@ -42,7 +42,8 @@ const config = {
 };
 
 
-async function signUpUser() {
+async function signUpUser(e) {
+	e.preventDefault()
 	if (!(username.length > 0 && email.length > 0 && password === confirmPassword && password.length > 0)) return;
 
 	try {
