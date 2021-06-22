@@ -2,8 +2,10 @@ import {createContext, useReducer} from 'react';
 import AppReducer from './AppReducer';
 
 const dataStore = {
-	chosenCategory:null,
+	chosenCategory:'',
 	questions: [],
+	maxScoreText: 0 ,
+	highScores: []
 };
 
 //Contex
@@ -27,6 +29,7 @@ export const GameProvider = ({children}) => {
 		<GameContex.Provider value={{
 			chosenCategory: state.chosenCategory,
 			questions: state.questions,
+			highScores: state.highScores,
 			//ACTIONS
 			setQuestions,
 			setCategory

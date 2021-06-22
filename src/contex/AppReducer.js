@@ -3,7 +3,7 @@ export default function AppReducer (state, action) {
 		case 'SET_QUESTIONS':
 			return {
 				...state,
-				questions: action.questions
+				questions: [action.questions]
 			}
 		
 		case 'SET_CATEGORY':

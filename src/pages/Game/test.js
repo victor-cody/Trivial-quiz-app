@@ -1,5 +1,3 @@
-import React from 'react';
-
 // var axios = require('axios');
 // var data = JSON.stringify({
 // 	"operation": "sql",
@@ -78,15 +76,3 @@ import React from 'react';
 // 	.catch(function (error) {
 // 		console.log(error);
 // 	});
-
-
-
-const Game = () => {
-	return (
-		<div>
-			
-		</div>
-	);
-};
-
-export default Game;

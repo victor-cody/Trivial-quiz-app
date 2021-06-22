@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Trivia Quiz App",
+  "name": "Trivia Quiz App On Programming",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation":"portrait",
+  "theme_color": "#e0e5ec",
+  "background_color": "#e0e5ec"
 }

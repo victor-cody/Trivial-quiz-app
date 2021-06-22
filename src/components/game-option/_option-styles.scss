@@ -1,0 +1,33 @@
+.choice{
+
+	width: 100%;
+
+// 	#e0e5ec
+// #5E5C7F
+
+	&:hover{
+	cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 darken($color: #e0e5ec, $amount: 10);
+    transform: translateY(-0.1rem);
+    transition:transform 150ms;
+	}
+
+	&__option{
+		padding: 1rem 2.5rem;
+		background-color: #004289;
+	}
+
+	&__text{
+		// padding: 1rem;
+    width:100%;
+    color:rgb(20, 20, 20);
+    transition: background-color .5s;
+	}
+}
+
+.correct{
+    background-color:#28a745;
+}
+.incorrect{
+    background-color: #dc3545;
+}
