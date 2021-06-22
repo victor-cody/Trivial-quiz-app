@@ -1,10 +1,10 @@
-import {createContext, useReducer} from 'react';
+import { createContext, useReducer, useState } from 'react';
 import AppReducer from './AppReducer';
 
 const dataStore = {
-	chosenCategory:'',
+	chosenCategory: '',
 	questions: [],
-	maxScoreText: 0 ,
+	maxScoreText: 0,
 	highScores: []
 };
 
@@ -12,12 +12,17 @@ const dataStore = {
 export const GameContex = createContext(dataStore);
 
 //Provider Component
-export const GameProvider = ({children}) => {
+export const GameProvider = ({ children }) => {
 
 	//Reducer
 	const [state, dispatch] = useReducer(AppReducer, dataStore)
 
-	const setQuestions = (questions, type='SET_QUESTIONS') => {
+	//GAME CONSTANTS
+	const [BONUS] = useState(10);
+	const [QUESTION_TIME] = useState(20);
+	const [MAX_QUESTIONS] = useState(20);
+
+	const setQuestions = (questions, type = 'SET_QUESTIONS') => {
 		dispatch(type, questions)
 	}
 
@@ -30,6 +35,10 @@ export const GameProvider = ({children}) => {
 			chosenCategory: state.chosenCategory,
 			questions: state.questions,
 			highScores: state.highScores,
+			BONUS,
+			QUESTION_TIME,
+			MAX_QUESTIONS,
+
 			//ACTIONS
 			setQuestions,
 			setCategory

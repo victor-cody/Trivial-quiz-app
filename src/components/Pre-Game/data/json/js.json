@@ -1,7 +1,7 @@
 [
 	{
 		"question": "Which operator returns true if the two compared values are not equal?",
-		"answer": {
+		"answers": {
 			"choice1": "()",
 			"choice2": "~",
 			"choice3": "==!",
@@ -11,7 +11,7 @@
 	},
 	{
 		"question": "Which of the statements is the correct way to create a variable called rate and assign it a value of 100?",
-		"answer": {
+		"answers": {
 			"choice1": "let rate = 100;",
 			"choice2": "let 100 = rate;",
 			"choice3": "100 = let rate;",
@@ -21,7 +21,7 @@
 	},
 	{
 		"question": "Which of the statements creates a new function called totalPrice?",
-		"answer": {
+		"answers": {
 			"choice1": "let totalPrice = function(price) { return price * 0.85; };",
 			"choice2": "let totalPrice(price) { return price * 0.85; };",
 			"choice3": "let function = totalPrice(price) { return price * 0.85; };",
@@ -31,7 +31,7 @@
 	},
 	{
 		"question": "What is the property that references the DOM element/object that dispatched an event?",
-		"answer": {
+		"answers": {
 			"choice1": "self",
 			"choice2": "object",
 			"choice3": "target",
@@ -41,7 +41,7 @@
 	},
 	{
 		"question": "What method converts JSON data to a JavaScript object?",
-		"answer": {
+		"answers": {
 			"choice1": "JSON.fromString()",
 			"choice2": "JSON.parse()",
 			"choice3": "JSON.toObject()",
@@ -51,7 +51,7 @@
 	},
 	{
 		"question": "Which Variable-defining keyword allows its variable to be accessed (as undefined) even before the line that defines it?",
-		"answer": {
+		"answers": {
 			"choice1": "all of them",
 			"choice2": "const",
 			"choice3": "var",
@@ -61,7 +61,7 @@
 	},
 	{
 		"question": "Which of these is not a keyword in JavaScript?",
-		"answer": {
+		"answers": {
 			"choice1": "this",
 			"choice2": "catch",
 			"choice3": "function",
@@ -71,7 +71,7 @@
 	},
 	{
 		"question": "What method converts a JavaScript object to JSON format",
-		"answer": {
+		"answers": {
 			"choice1": "JSON.parse()",
 			"choice2": "JSON.fromString()",
 			"choice3": "JSON.stringify()",
@@ -81,7 +81,7 @@
 	},
 	{
 		"question": "Your code is producing the error: TypeError: Cannot read property 'reduce' of undefined. What does that mean?",
-		"answer": {
+		"answers": {
 			"choice1": "You are calling a method named reduce on an object that's declared but has no value.",
 			"choice2": "You are calling a method named reduce on an object that does not exist.",
 			"choice3": "You are calling a method named reduce on an empty array.",
@@ -91,7 +91,7 @@
 	},
 	{
 		"question": "Which choice is an incorrect way to define an arrow function that returns an empty object?",
-		"answer": {
+		"answers": {
 			"choice1": "() => ({})",
 			"choice2": "() => {}",
 			"choice3": "() => { return {};}",
@@ -101,7 +101,7 @@
 	},
 	{
 		"question": "What keyword is used to create an error?",
-		"answer": {
+		"answers": {
 			"choice1": "throw",
 			"choice2": "exception",
 			"choice3": "catch",
@@ -111,7 +111,7 @@
 	},
 	{
 		"question": "Which statement references the DOM element created by the code shown? \n <p class='pull'>lorem ipsum</p>",
-		"answer": {
+		"answers": {
 			"choice1": "Document.querySelector('class.pull')",
 			"choice2": "document.querySelector('.pull')",
 			"choice3": "document.querySelector('pull')",
@@ -121,7 +121,7 @@
 	},
 	{
 		"question": "What is the correct method to cancel an event default behavior?",
-		"answer": {
+		"answers": {
 			"choice1": "cancel()",
 			"choice2": "stop()",
 			"choice3": "preventDefault()",
@@ -130,7 +130,7 @@
 		"correct": 2
 	}, {
 		"question": "This program has a problem. What is it?\nvar a;\nvar b = (a = 3) ? true : false;",
-		"answer": {
+		"answers": {
 			"choice1": "You cannot use a ternary operator in the right-hand side of an assignment.",
 			"choice2": "You cannot define a variable without initializing it first.",
 			"choice3": "The condition in the ternary statement is using the assignment operator.",
@@ -140,7 +140,7 @@
 	},
 	{
 		"question": "Which statement is used to skip iteration of the loop?",
-		"answer": {
+		"answers": {
 			"choice1": "break",
 			"choice2": "pass",
 			"choice3": "skip",
@@ -150,7 +150,7 @@
 	},
 	{
 		"question": "How do you add an inline comment to JavaScript code?",
-		"answer": {
+		"answers": {
 			"choice1": "*! This is a comment*",
 			"choice2": "*# This is a comment*",
 			"choice3": "*\\ This is a comment*",
@@ -160,7 +160,7 @@
 	},
 	{
 		"question": "Which statement correctly selects all img elements in the DOM tree?",
-		"answer": {
+		"answers": {
 			"choice1": "document.querySelector('img')",
 			"choice2": "document.querySelectorAll('<img>')",
 			"choice3": "document.querySelectorAll('img')",
@@ -170,7 +170,7 @@
 	},
 	{
 		"question": "In React which class-based lifecycle method would be called at the same time as the useEffect Hook?",
-		"answer": {
+		"answers": {
 			"choice1": "componentWillUnmount",
 			"choice2": "componentDidUpdate",
 			"choice3": "render",
@@ -179,7 +179,7 @@
 		"correct": 3
 	}, {
 		"question": "What event is fired on a text field within a form when a user tabs to it, or clicks or touches it?",
-		"answer": {
+		"answers": {
 			"choice1": "focus",
 			"choice2": "blur",
 			"choice3": "hover",
@@ -189,7 +189,7 @@
 	},
 	{
 		"question": "You've written the event listener shown below for a form button, but each time you click the button, the page reloads. What statement would you add to stop this from happening?\nbutton.addEventListener('click',function (e) {\nbutton.className = 'clicked';}\n);",
-		"answer": {
+		"answers": {
 			"choice1": "e.blockReload()",
 			"choice2": "button.preventDefault()",
 			"choice3": "button.blockReload()",
