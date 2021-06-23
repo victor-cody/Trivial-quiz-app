@@ -1,5 +1,4 @@
 import { Route, Switch } from "react-router-dom";
-import { HarperDBProvider } from "use-harperdb";
 //jQuery
 // import jQuery from './assets/jquery/JQUERY'
 //bootstrap
@@ -21,11 +20,6 @@ import { GameProvider } from "./contex/GameContex";
 function App() {
   return (
     <>
-      <HarperDBProvider
-        url={process.env.REACT_APP_INSTANCE_URL}
-        user={process.env.REACT_APP_USER}
-        password={process.env.REACT_APP_PASSWORD}
-      >
         <GameProvider>
 
           <Switch>
@@ -38,7 +32,7 @@ function App() {
           </Switch>
 
         </GameProvider>
-      </HarperDBProvider>
+
     </>
   );
 }
