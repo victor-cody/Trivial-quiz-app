@@ -4,6 +4,7 @@ import { useHarperDB } from "use-harperdb";
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import GameOption from '../../components/game-option/GameOption';
 import { GameContex } from '../../contex/GameContex';
+import Countdown from '../../components/Countdown/Countdown';
 
 
 const Game = () => {
@@ -17,6 +18,7 @@ const [score, setScore] = useState(0)
 const [showNextButton, setShowNextButton] = useState(false)
 const [currentQuestion, setcurrentQuestion] = useState({})
 const [countDown, setCountDown] = useState(true)
+const [timer, setTimer] = useState(0)
 
 const { chosenCategory, BONUS, MAX_QUESTIONS } = useContext(GameContex)
 
@@ -93,6 +95,7 @@ if ((availableQuestions && availableQuestions.length > 0) || questionCounter <= 
 				/>
 			))}
 
+			<Countdown counter={timer} />
 
 			{showNextButton && <button className="col-sm-7 a text-capitalize font-weight-bold btn mt-3 mb-1"
 				onClick={(e) => {
