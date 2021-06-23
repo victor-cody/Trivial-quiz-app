@@ -1,0 +1,15 @@
+#progress-bar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid #FF4C60;
+    background-color: white;
+    margin-top: 0.5rem;
+    border-radius: 5rem;
+
+	&__full{
+    height: 2.6rem;
+    background-color: #FF4C60;
+    width: 0%;
+    border-radius: 5rem;
+}
+}

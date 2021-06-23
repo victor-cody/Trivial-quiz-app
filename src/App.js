@@ -27,12 +27,16 @@ function App() {
         password={process.env.REACT_APP_PASSWORD}
       >
         <GameProvider>
+
           <Switch>
+
             <Route path="/" exact component={Home} />
             <Route path="/auth/sign-up" component={SignUpForm} />
             <Route path="/auth/login" component={LoginForm} />
             <Route path="/categories" component={PreGame} />
+
           </Switch>
+
         </GameProvider>
       </HarperDBProvider>
     </>

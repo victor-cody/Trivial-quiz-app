@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { useHistory } from 'react-router';
+import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import GameOption from '../../components/game-option/GameOption';
 import { GameContex } from '../../contex/GameContex';
 
@@ -45,7 +46,7 @@ const Game = () => {
 
 		//then select and render random question from question array
 		setQuestionCounter(prev => prev++);
-		// questionCounterText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`
+
 		const questionIndex = Math.floor(Math.random() * availableQuestions.length);
 		setcurrentQuestion(availableQuestions[questionIndex]);
 		question.innerText = currentQuestion.question;
@@ -56,7 +57,7 @@ const Game = () => {
 		// });
 
 		//update progress bar
-		progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+
 
 		//Remove just rendered question from the question array
 		setAvailableQuestions(prev => prev.splice(questionIndex, 1))
@@ -66,23 +67,42 @@ const Game = () => {
 	}
 
 
-
-	if (questions && questions.length > 0) {
+	// start game if their are available questions or if we haven't exceeded the maximum number of questions
+	if ((availableQuestions && availableQuestions.length > 0) || questionCounter <= MAX_QUESTIONS) {
 		return (
-			<div>
+			<section>
 				<h2>{chosenCategory}</h2>
 
-				{questions.map((question, id) => (
+				<header className="header">
+					<div>
+						<p className="counter hud-prefix">Question {questionCounter}/{MAX_QUESTIONS} </p>
+						<ProgressBar counter={questionCounter}/>
+					</div>
+					<div></div>
+				</header>
 
-					question.answer.map((answer, id) => (
-						<GameOption
-							number={id + 1}
-							text={answer}
-							id={id}
-						/>
-					))
+				{	currentQuestion.answers.map((answer, id) => (
+					<GameOption
+						number={id + 1}
+						text={answer}
+						id={id}
+					/>
 				))}
-			</div>
+
+
+				{showNextButton && <button className="col-sm-7 a text-capitalize font-weight-bold btn mt-3 mb-1"
+					onClick={(e) => {
+						e.preventDefault();
+						// removing the 'correct' and 'incorrect' class from each of the options element
+						[...document.getElementsByClassName('choice-container')].forEach(element => {
+							element.classList.remove('correct')
+							element.classList.remove('incorrect')
+						});
+						// getting a new question
+						getNewQuestion()
+					}}
+				>continue</button>}
+			</section>
 		);
 	}
 
