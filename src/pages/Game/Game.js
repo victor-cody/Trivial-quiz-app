@@ -88,7 +88,7 @@ const Game = () => {
 		const correctAnswer = document.querySelector(`p[data-choicenumber = "${currentQuestion.answer}"]`);
 
 		//Check if selected answer is wrong or right and apply corresponding class style
-		if (selectedChoice.dataset["choicenumber"] === currentQuestion.anwser) {
+		if (selectedChoice.dataset["choicenumber"] === currentQuestion.answer) {
 			selectedChoice.classList.add('correct');
 			setScore(BONUS);
 		} else {
