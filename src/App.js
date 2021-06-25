@@ -16,6 +16,7 @@ import PreGame from "./components/Pre-Game/PreGame";
 import LoginForm from "./pages/auth/login/Login";
 //GameProvider
 import { GameProvider } from "./contex/GameContex";
+import Game from "./pages/Game/Game";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/auth/sign-up" component={SignUpForm} />
             <Route path="/auth/login" component={LoginForm} />
             <Route path="/categories" component={PreGame} />
+          <Route path="/game" component={Game} />
 
           </Switch>
 

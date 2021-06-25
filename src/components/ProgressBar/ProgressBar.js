@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { GameContex } from '../../contex/GameContex';
-import 'progress_bar.scss';
+import './progress_bar.scss';
 
 const ProgressBar = ({ counter }) => {
 

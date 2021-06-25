@@ -19,7 +19,7 @@
 		"correct": 0
 	},
 	{
-		"question": "When is the `<link>` tag used?",
+		"question": "When is the <link> tag used?",
 		"answers": {
 			"choice1": "when linking style sheets, JavaScript, and icons for mobile apps",
 			"choice2": "when linking style sheets, favicons, and preloading assets",
@@ -29,7 +29,7 @@
 		"correct": 2
 	},
 	{
-		"question": "With which tags is the `<source>` element associated?",
+		"question": "With which tags is the <source> element associated?",
 		"answers": {
 			"choice1": "`<svg>, <picture>, <audio>, and <video>`",
 			"choice2": "`<picture>, <audio>, and <video>`",
@@ -39,7 +39,7 @@
 		"correct": 1
 	},
 	{
-		"question": "When should you use `<ol>` and `<ul>` elements?",
+		"question": "When should you use <ol> and <ul> elements?",
 		"answers": {
 			"choice1": "Use `<ul>` when you want a bulleted list and `<ol>` when you want a numbered list.",
 			"choice2": "Use `<ul>` when you have a list of items in which the order of the items matters. Use `<ol>` when you have a list of items that could go in any order.",
@@ -59,7 +59,7 @@
 		"correct": 3
 	},
 	{
-		"question": "What is the difference between the `<div>` and `<span>` tags?",
+		"question": "What is the difference between the <div> and <span> tags?",
 		"answers": {
 			"choice1": "`<div>` is used where a generic block-level tag is needed, while `<span>` is used where a generic inline tag is needed.",
 			"choice2": "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
@@ -117,5 +117,75 @@
 			"choice4": "It pauses the parsing of HTML code while the script runs."
 		},
 		"correct": 2
+	},
+	{
+		"question": "In the code below, what is the purpose of the **id** attribute?\n\n<p id='warning'>Be careful when installing this product.</p>",
+		"answers": {
+			"choice1": "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage.",
+			"choice2": "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
+			"choice3": "It establishes that id may be used for styling CSS several times per page.",
+			"choice4": "It establishes that id is a regular identifier in the website, used for styling CSS, scripting, and linking within a webpage"
+		},
+		"correct": 0
+	},
+	{
+		"question": "How do you confirm that a document is written in HTML5?",
+		"answers": {
+			"choice1": "The server wraps the webpage in an HTML5 wrapper.",
+			"choice2": "There should be a `<!DOCTYPE html>` declaration that starts the document.",
+			"choice3": "The browser receives encoding from the server to display the document with HTML5.",
+			"choice4": "It is enclosed in a `<html>` tag."
+		},
+		"correct": 1
+	},
+	{
+		"question": "What is the semantic use of the <hr> ?",
+		"answers": {
+			"choice1": "This tag is depreciated and should not be used.",
+			"choice2": "It designates a topic shift within a section at the paragraph level.",
+			"choice3": "It draws a horizontal line.",
+			"choice4": "It designates a shift of topic at the section level."
+		},
+		"correct": 1
+	},
+	{
+		"question": "What do you use the <label> tag for?",
+		"answers": {
+			"choice1": "To labels webpages with important information.",
+			"choice2": "To visually associates a text label with an interface element.",
+			"choice3": "To visually labels from fields.",
+			"choice4": "To programmatically associates a text label with an interface element."
+		},
+		"correct": 3
+	},
+	{
+		"question": "What does the **poster** attribute do in the `<video>` tag?",
+		"answers": {
+			"choice1": "It specifies an image that should display while the video downloads and until the video is played.",
+			"choice2": "It specifies an image that only displays if there is a problem with the video.",
+			"choice3": "It specifies an image that should display until the video is played.",
+			"choice4": "It specifies an image that should display while the video downloads."
+		},
+		"correct": 0
+	},
+	{
+		"question": "Which of these image formats is supported by all web browsers?",
+		"answers": {
+			"choice1": "JPG, GIF, TIF",
+			"choice2": "JPG, TIF, BMP",
+			"choice3": "TIF, BMP, GIF",
+			"choice4": "PNG, GIF, JPG"
+		},
+		"correct": 3
+	},
+	{
+		"question": "Which of these statement is FALSE ?",
+		"answers": {
+			"choice1": "Inline elements can be nested inside inline elements.",
+			"choice2": "Block elements can be nested inside block elements.",
+			"choice3": "Inline elements can be nested inside block elements.",
+			"choice4": "Block elements can be nested inside inline elements."
+		},
+		"correct": 3
 	},
 ]
