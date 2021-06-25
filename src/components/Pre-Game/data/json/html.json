@@ -1,190 +1,190 @@
 [	{
 		"question": "In HTML5, which tag or tags embed a webpage inside of a webpage?",
 		"answers": {
-			"choice1": "<iframe>, <frame>, and <frameset>",
-			"choice2": "<frame>",
-			"choice3": "<iframe>",
-			"choice4": "`<frame> and <frameset>"
+			"a": "<iframe>, <frame>, and <frameset>",
+			"b": "<frame>",
+			"c": "<iframe>",
+			"d": "`<frame> and <frameset>"
 		},
 		"correct": 2
 	},
 	{
 		"question": "What is the best way to apply bold styling to text?",
 		"answers": {
-			"choice1": "<strong>",
-			"choice2": "Using CSS",
-			"choice3": "<bold>",
-			"choice4": "<b>"
+			"a": "<strong>",
+			"b": "Using CSS",
+			"c": "<bold>",
+			"d": "<b>"
 		},
 		"correct": 0
 	},
 	{
 		"question": "When is the <link> tag used?",
 		"answers": {
-			"choice1": "when linking style sheets, JavaScript, and icons for mobile apps",
-			"choice2": "when linking style sheets, favicons, and preloading assets",
-			"choice3": "when linking style sheets and favicons",
-			"choice4": "when linking style sheets, external URLs, and favicons"
+			"a": "when linking style sheets, JavaScript, and icons for mobile apps",
+			"b": "when linking style sheets, favicons, and preloading assets",
+			"c": "when linking style sheets and favicons",
+			"d": "when linking style sheets, external URLs, and favicons"
 		},
 		"correct": 2
 	},
 	{
 		"question": "With which tags is the <source> element associated?",
 		"answers": {
-			"choice1": "`<svg>, <picture>, <audio>, and <video>`",
-			"choice2": "`<picture>, <audio>, and <video>`",
-			"choice3": "It is interchangeable with the `src` attribute, so any element which uses `src` may use `<source>`",
-			"choice4": "`<audio> and <video>`"
+			"a": "`<svg>, <picture>, <audio>, and <video>`",
+			"b": "`<picture>, <audio>, and <video>`",
+			"c": "It is interchangeable with the `src` attribute, so any element which uses `src` may use `<source>`",
+			"d": "`<audio> and <video>`"
 		},
 		"correct": 1
 	},
 	{
 		"question": "When should you use <ol> and <ul> elements?",
 		"answers": {
-			"choice1": "Use `<ul>` when you want a bulleted list and `<ol>` when you want a numbered list.",
-			"choice2": "Use `<ul>` when you have a list of items in which the order of the items matters. Use `<ol>` when you have a list of items that could go in any order.",
-			"choice3": "Use `<ol>` when you want a bulleted list and `<ul>` when you want a numbered list.",
-			"choice4": "Use `<ol>` when you have a list of items in which the order of the items matters. Use `<ul>` when you have a list of items that could go in any order."
+			"a": "Use `<ul>` when you want a bulleted list and `<ol>` when you want a numbered list.",
+			"b": "Use `<ul>` when you have a list of items in which the order of the items matters. Use `<ol>` when you have a list of items that could go in any order.",
+			"c": "Use `<ol>` when you want a bulleted list and `<ul>` when you want a numbered list.",
+			"d": "Use `<ol>` when you have a list of items in which the order of the items matters. Use `<ul>` when you have a list of items that could go in any order."
 		},
 		"correct": 0
 	},
 	{
 		"question": "What is the difference between the post and get methods in a form?",
 		"answers": {
-			"choice1": "post is used for sending information to the server. get is used for retrieving form information from the server.",
-			"choice2": "get is used for sending information to the server. post is used for retrieving form information from the server.",
-			"choice3": "With get, data is included in the form body when send to the server. With post, the data goes through the URL.",
-			"choice4": "With post, data is included in the form body when send to the server. With get, the data goes through the URL."
+			"a": "post is used for sending information to the server. get is used for retrieving form information from the server.",
+			"b": "get is used for sending information to the server. post is used for retrieving form information from the server.",
+			"c": "With get, data is included in the form body when send to the server. With post, the data goes through the URL.",
+			"d": "With post, data is included in the form body when send to the server. With get, the data goes through the URL."
 		},
 		"correct": 3
 	},
 	{
 		"question": "What is the difference between the <div> and <span> tags?",
 		"answers": {
-			"choice1": "`<div>` is used where a generic block-level tag is needed, while `<span>` is used where a generic inline tag is needed.",
-			"choice2": "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
-			"choice3": "`<div>` is the industry-standard default tag, but you could use `<span>` if you prefer.",
-			"choice4": "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed."
+			"a": "`<div>` is used where a generic block-level tag is needed, while `<span>` is used where a generic inline tag is needed.",
+			"b": "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
+			"c": "`<div>` is the industry-standard default tag, but you could use `<span>` if you prefer.",
+			"d": "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed."
 		},
 		"correct": 0
 	},
 	{
 		"question": "What is the difference between the `<head>` and `<header>` tags in HTML?",
 		"answers": {
-			"choice1": "There is only one `<head>` tag per page, while there may be many `<header>` tags.",
-			"choice2": "The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.",
-			"choice3": "all of these answers",
-			"choice4": "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content."
+			"a": "There is only one `<head>` tag per page, while there may be many `<header>` tags.",
+			"b": "The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.",
+			"c": "all of these answers",
+			"d": "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content."
 		},
 		"correct": 2
 	},
 	{
 		"question": "What does the `<label>` tag do?",
 		"answers": {
-			"choice1": "It labels webpages with important information.",
-			"choice2": "It visually associates a text label with an interface element.",
-			"choice3": "It visually labels from fields.",
-			"choice4": "It programmatically associates a text label with an interface element."
+			"a": "It labels webpages with important information.",
+			"b": "It visually associates a text label with an interface element.",
+			"c": "It visually labels from fields.",
+			"d": "It programmatically associates a text label with an interface element."
 		},
 		"correct": 3
 	},
 	{
 		"question": "Which statement is true about the defer attribute of the HTML script tag?",
 		"answers": {
-			"choice1": "The defer attribute can work synchronously.",
-			"choice2": "The defer attribute works only with generators.",
-			"choice3": "The defer attribute works only with promises.",
-			"choice4": "The defer attribute will asynchronously load the scripts in order."
+			"a": "The defer attribute can work synchronously.",
+			"b": "The defer attribute works only with generators.",
+			"c": "The defer attribute works only with promises.",
+			"d": "The defer attribute will asynchronously load the scripts in order."
 		},
 		"correct": 3
 	},
 	{
 		"question": "Which tag is the root element of an HTML document?",
 		"answers": {
-			"choice1": "<DOCTYPE html>",
-			"choice2": "<html>",
-			"choice3": "<body>",
-			"choice4": "<root>"
+			"a": "<DOCTYPE html>",
+			"b": "<html>",
+			"c": "<body>",
+			"d": "<root>"
 		},
 		"correct": 1
 	},
 	{
 		"question": "What is the purpose of the async keyword in a script tag?",
 		"answers": {
-			"choice1": "It will download the script from the server when resources allow.",
-			"choice2": "It will run the script after HTML parsing is complete.",
-			"choice3": "It makes the script run when the script is ready.",
-			"choice4": "It pauses the parsing of HTML code while the script runs."
+			"a": "It will download the script from the server when resources allow.",
+			"b": "It will run the script after HTML parsing is complete.",
+			"c": "It makes the script run when the script is ready.",
+			"d": "It pauses the parsing of HTML code while the script runs."
 		},
 		"correct": 2
 	},
 	{
 		"question": "In the code below, what is the purpose of the **id** attribute?\n\n<p id='warning'>Be careful when installing this product.</p>",
 		"answers": {
-			"choice1": "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage.",
-			"choice2": "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
-			"choice3": "It establishes that id may be used for styling CSS several times per page.",
-			"choice4": "It establishes that id is a regular identifier in the website, used for styling CSS, scripting, and linking within a webpage"
+			"a": "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage.",
+			"b": "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
+			"c": "It establishes that id may be used for styling CSS several times per page.",
+			"d": "It establishes that id is a regular identifier in the website, used for styling CSS, scripting, and linking within a webpage"
 		},
 		"correct": 0
 	},
 	{
 		"question": "How do you confirm that a document is written in HTML5?",
 		"answers": {
-			"choice1": "The server wraps the webpage in an HTML5 wrapper.",
-			"choice2": "There should be a `<!DOCTYPE html>` declaration that starts the document.",
-			"choice3": "The browser receives encoding from the server to display the document with HTML5.",
-			"choice4": "It is enclosed in a `<html>` tag."
+			"a": "The server wraps the webpage in an HTML5 wrapper.",
+			"b": "There should be a `<!DOCTYPE html>` declaration that starts the document.",
+			"c": "The browser receives encoding from the server to display the document with HTML5.",
+			"d": "It is enclosed in a `<html>` tag."
 		},
 		"correct": 1
 	},
 	{
 		"question": "What is the semantic use of the <hr> ?",
 		"answers": {
-			"choice1": "This tag is depreciated and should not be used.",
-			"choice2": "It designates a topic shift within a section at the paragraph level.",
-			"choice3": "It draws a horizontal line.",
-			"choice4": "It designates a shift of topic at the section level."
+			"a": "This tag is depreciated and should not be used.",
+			"b": "It designates a topic shift within a section at the paragraph level.",
+			"c": "It draws a horizontal line.",
+			"d": "It designates a shift of topic at the section level."
 		},
 		"correct": 1
 	},
 	{
 		"question": "What do you use the <label> tag for?",
 		"answers": {
-			"choice1": "To labels webpages with important information.",
-			"choice2": "To visually associates a text label with an interface element.",
-			"choice3": "To visually labels from fields.",
-			"choice4": "To programmatically associates a text label with an interface element."
+			"a": "To labels webpages with important information.",
+			"b": "To visually associates a text label with an interface element.",
+			"c": "To visually labels from fields.",
+			"d": "To programmatically associates a text label with an interface element."
 		},
 		"correct": 3
 	},
 	{
 		"question": "What does the **poster** attribute do in the `<video>` tag?",
 		"answers": {
-			"choice1": "It specifies an image that should display while the video downloads and until the video is played.",
-			"choice2": "It specifies an image that only displays if there is a problem with the video.",
-			"choice3": "It specifies an image that should display until the video is played.",
-			"choice4": "It specifies an image that should display while the video downloads."
+			"a": "It specifies an image that should display while the video downloads and until the video is played.",
+			"b": "It specifies an image that only displays if there is a problem with the video.",
+			"c": "It specifies an image that should display until the video is played.",
+			"d": "It specifies an image that should display while the video downloads."
 		},
 		"correct": 0
 	},
 	{
 		"question": "Which of these image formats is supported by all web browsers?",
 		"answers": {
-			"choice1": "JPG, GIF, TIF",
-			"choice2": "JPG, TIF, BMP",
-			"choice3": "TIF, BMP, GIF",
-			"choice4": "PNG, GIF, JPG"
+			"a": "JPG, GIF, TIF",
+			"b": "JPG, TIF, BMP",
+			"c": "TIF, BMP, GIF",
+			"d": "PNG, GIF, JPG"
 		},
 		"correct": 3
 	},
 	{
 		"question": "Which of these statement is FALSE ?",
 		"answers": {
-			"choice1": "Inline elements can be nested inside inline elements.",
-			"choice2": "Block elements can be nested inside block elements.",
-			"choice3": "Inline elements can be nested inside block elements.",
-			"choice4": "Block elements can be nested inside inline elements."
+			"a": "Inline elements can be nested inside inline elements.",
+			"b": "Block elements can be nested inside block elements.",
+			"c": "Inline elements can be nested inside block elements.",
+			"d": "Block elements can be nested inside inline elements."
 		},
 		"correct": 3
 	},

@@ -2,60 +2,197 @@
 	{
 		"question": "Using an attribute selector, how would you select an `<a>` element with a 'title' attribute?",
 		"answers": {
-			"choice1": "a[title]{...}",
-			"choice2": " > title {...}",
-			"choice3": "a.title {...}",
-			"choice4": "a=title {...}"
+			"a": "a[title]{...}",
+			"b": " > title {...}",
+			"c": "a.title {...}",
+			"d": "a=title {...}"
 		},
 		"correct": 0
 	}, {
 		"question": "What is the line-height property primarily used for?",
 		"answers": {
-			"choice1": "to control the height of the space between two lines of content",
-			"choice2": "to control the height of the space between heading elements",
-			"choice3": "to control the height of the character size",
-			"choice4": "to control the width of the space between characters"
+			"a": "to control the height of the space between two lines of content",
+			"b": "to control the height of the space between heading elements",
+			"c": "to control the height of the character size",
+			"d": "to control the width of the space between characters"
 		},
 		"correct": 0
 	},
 	{
 		"question": "Which is NOT true about class selectors?",
 		"answers": {
-			"choice1": "Multiple classes can be used within the same element.",
-			"choice2": "The same class can be used multiple times per page.",
-			"choice3": "Class selectors with a leading period",
-			"choice4": "Classes can be used multiple times per page but not within the same element."
+			"a": "Multiple classes can be used within the same element.",
+			"b": "The same class can be used multiple times per page.",
+			"c": "Class selectors with a leading period",
+			"d": "Classes can be used multiple times per page but not within the same element."
 		},
 		"correct": 3
 	},
 	{
 		"question": "How would you make the first letter of every paragraph on the page red?",
 		"answers": {
-			"choice1": "p::first-letter { color: red; }",
-			"choice2": "p:first-letter { color: red; }.",
-			"choice3": "first-letter::p { color: red; }",
-			"choice4": "first-letter:p { color: red; }"
+			"a": "p::first-letter { color: red; }",
+			"b": "p:first-letter { color: red; }.",
+			"c": "first-letter::p { color: red; }",
+			"d": "first-letter:p { color: red; }"
 		},
 		"correct": 3
 	},
 	{
 		"question": "Which of the following is not a valid color value?",
 		"answers": {
-			"choice1": "color: #000",
-			"choice2": "color: rgb(0,0,0).",
-			"choice3": "color: #000000",
-			"choice4": "color: 000000"
+			"a": "color: #000",
+			"b": "color: rgb(0,0,0).",
+			"c": "color: #000000",
+			"d": "color: 000000"
 		},
 		"correct": 3
 	},
 	{
+		"question": "When using position: abosolute, what will the element always be positioned relative to?",
+		"answers": {
+			"a": "the closest element with position: relative",
+			"b": "the browser's viewport",
+			"c": "the parent element",
+			"d": "the wrapper element"
+		},
+		"correct": 0
+	},
+	{
 		"question": "When using Flexbox, what property and value is used to display flex items in a column?",
 		"answers": {
-			"choice1": "flex-flow: column; or flex-direction: column",
-			"choice2": "flex-flow: column;",
-			"choice3": "flex-column: auto;",
-			"choice4": "flex-direction: column;"
+			"a": "flex-flow: column; or flex-direction: column",
+			"b": "flex-flow: column;",
+			"c": "flex-column: auto;",
+			"d": "flex-direction: column;"
+		},
+		"correct": 0
+	},
+	{
+		"question": "Which of these properties should be used to align a global navigation bar which stays fixed at the top of the page?",
+		"answers": {
+			"a": "position",
+			"b": "flexbox",
+			"c": "grid",
+			"d": "float"
+		},
+		"correct": 0
+	},{
+		"question": "when will the color pink be applied to the anchor element, In the example below?\n\na:active {  color: pink; }",
+		"answers": {
+			"a": "The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.",
+			"b": "The color of the link will display as pink on mouse hover.",
+			"c": "The color of the link will display as pink while the link is being clicked but before the mouse click is released.",
+			"d": "The color of the link will display as pink before it has been clicked."
+		},
+		"correct": 2
+	},
+	{
+		"question": "Which property would you used, To change the color of an SVG using CSS? ",
+		"answers": {
+			"a": "Use background-fill to set the color inside the object and stroke or border to set the color of the border.",
+			"b": "The color cannot be changed with CSS.",
+			"c": "Use fill or background to set the color inside the object and stroke to set the color of the border.",
+			"d": "Use fill to set the color inside the object and stroke to set the color of the border."
 		},
 		"correct": 3
+	},
+	{
+		"question": "When using position: fixed, what will the element always be positioned relative to?",
+		"answers": {
+			"a": "the closest element with position: relative",
+			"b": "the browser's viewport",
+			"c": "the parent element",
+			"d": "the wrapper element"
+		},
+		"correct": 1
+	},
+	{
+		"question": "When using media queries, media types are used to target a device category. Which choice lists current valid media types?",
+		"answers": {
+			"a": "print, screen, aural",
+			"b": "print, screen, television",
+			"c": "print, screen, speech",
+			"d": "print, speech, device"
+		},
+		"correct": 2
+	},
+	{
+		"question": "What is the rem unit based on?",
+		"answers": {
+			"a": "The rem unit is relative to the font-size of the p element.",
+			"b": "You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }",
+			"c": "The rem unit is relative to the font-size of the containing (parent) element.",
+			"d": "The rem unit is relative to the font-size of the root (html) element of the page."
+		},
+		"correct": 3
+	},
+	{
+		"question": "How would you give a block element rounded corners?",
+		"answers": {
+			"a": "corner-curve: 10px",
+			"b": "border-corner: 10px",
+			"c": "border-radius: 10px",
+			"d": "corner-radius: 10px"
+		},
+		"correct": 2
+	},
+	{
+		"question": "What is the difference between display:none and visibility:hidden?",
+		"answers": {
+			"a": "display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document",
+			"b": "display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.",
+			"c": "There is no difference; both will hide the element on the page"
+		},
+		"correct": 1
+	},
+	{
+		"question": "Which would properly scale an element to be 50% smaller on hover?",
+		"answers": {
+			"a": "element:hover {transform: scale(50%);}",
+			"b": "element:hover {transform: scale(0.5);}",
+			"c": "element:hover {scale: 50%;}"
+		},
+		"correct": 1
+	},
+	{
+		"question": "What is not true about class selectors?",
+		"answers": {
+			"a": "Only one class value can be assigned to an element.",
+			"b": "An element can have multiple class value.",
+			"c": "Class selectors are marked with a leading period.",
+			"d": "More than one element can have the same class value."
+		},
+		"correct": 0
+	},
+	{
+		"question": "What is the difference between the margin and padding properties?",
+		"answers": {
+			"a": "Margin adds space around and inside of an element; padding adds space only inside of an element.",
+			"b": "Margin adds space around an element; padding adds apace inside of an element.",
+			"c": "Margin adds a line around an element, padding adds space inside of an element.",
+			"d": "Margin adds space inside of an element, padding adds space around an element."
+		},
+		"correct": 1
+	},
+	{
+		"question": "Which style places an element at a fixed location within its container?",
+		"answers": {
+			"a": "position: absolute;",
+			"b": "display: flex;",
+			"c": "display: block;",
+			"d": "float: left;"
+		},
+		"correct": 0
+	},
+	{
+		"question": "When would you use the @font-face method?",
+		"answers": {
+			"a": "to set the font size of the text",
+			"b": "to load custom fonts into a stylesheet",
+			"c": "to change the name of the font declared in the font-family",
+			"d": "to set the color of the text"
+		},
+		"correct": 1
 	},
 ]
