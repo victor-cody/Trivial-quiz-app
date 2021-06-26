@@ -1,13 +1,13 @@
 [
 	{
-		"question": "Using an attribute selector, how would you select an `<a>` element with a 'title' attribute?",
+		"question": "What property is used to adjust the space between text characters?",
 		"answers": {
-			"a": "a[title]{...}",
-			"b": " > title {...}",
-			"c": "a.title {...}",
-			"d": "a=title {...}"
+			"a": "font-style",
+			"b": " text-transform",
+			"c": "font-variant",
+			"d": "letter-spacing"
 		},
-		"correct": 0
+		"correct": 3
 	}, {
 		"question": "What is the line-height property primarily used for?",
 		"answers": {

@@ -92,10 +92,10 @@
 	{
 		"question": "Which choice is an incorrect way to define an arrow function that returns an empty object?",
 		"answers": {
-			"a": "() => ({})",
-			"b": "() => {}",
-			"c": "() => { return {};}",
-			"d": "() => (({}))"
+			"a": "'() => ({})'",
+			"b": "'() => {}'",
+			"c": "'() => { return {};}'",
+			"d": "'() => (({}))'"
 		},
 		"correct": 1
 	},
@@ -196,5 +196,5 @@
 			"d": "e.preventDefault()"
 		},
 		"correct": 3
-	},
+	}
 ]
