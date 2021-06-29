@@ -11,12 +11,13 @@ import "./assets/animate/animate.css";
 import "./assets/sass/_variables.scss";
 import "./assets/sass/App.scss";
 import Home from "./components/Homepage/Home";
-import SignUpForm from "./pages/auth/signup/Signup";
+// import SignUpForm from "./pages/auth/signup/Signup";
 import PreGame from "./components/Pre-Game/PreGame";
-import LoginForm from "./pages/auth/login/Login";
+// import LoginForm from "./pages/auth/login/Login";
 //GameProvider
 import { GameProvider } from "./contex/GameContex";
 import Game from "./pages/Game/Game";
+import HomePage from "./pages/Homepage/Homepage";
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
       <GameProvider>
         <Router>
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/auth/sign-up" component={SignUpForm} />
-            <Route path="/auth/login" component={LoginForm} />
+            <Route path="/" exact component={HomePage} />
+            <Route path="/get-started"  component={Home} />
+            {/* <Route path="/auth/sign-up" component={SignUpForm} />
+            <Route path="/auth/login" component={LoginForm} /> */}
             <Route path="/categories" component={PreGame} />
             <Route path="/game" component={Game} />
           </Switch>
