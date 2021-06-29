@@ -1,0 +1,202 @@
+[
+  {
+    "question": "Which operator returns true if the two compared values are not equal?",
+    "answers": {
+      "a": "()",
+      "b": "~",
+      "c": "==!",
+      "d": "!=="
+    },
+    "correct": 3
+  },
+  {
+    "question": "Which of the statements is the correct way to create a variable called rate and assign it a value of 100?",
+    "answers": {
+      "a": "let rate = 100",
+      "b": "let 100 = rate",
+      "c": "100 = let rate",
+      "d": "rate = 100"
+    },
+    "correct": 0
+  },
+  {
+    "question": "Which of the statements creates a new function called totalPrice?",
+    "answers": {
+      "a": "let totalPrice = function(price) { return price * 0.85 }",
+      "b": "let totalPrice(price) { return price * 0.85 }",
+      "c": "let function = totalPrice(price) { return price * 0.85 }",
+      "d": "totalPrice = function(price) { return price * 0.85 }"
+    },
+    "correct": 0
+  },
+  {
+    "question": "What is the property that references the DOM element/object that dispatched an event?",
+    "answers": {
+      "a": "self",
+      "b": "object",
+      "c": "target",
+      "d": "source"
+    },
+    "correct": 2
+  },
+  {
+    "question": "What method converts JSON data to a JavaScript object?",
+    "answers": {
+      "a": "JSON.fromString()",
+      "b": "JSON.parse()",
+      "c": "JSON.toObject()",
+      "d": "JSON.stringify()"
+    },
+    "correct": 1
+  },
+  {
+    "question": "Which Variable-defining keyword allows its variable to be accessed (as undefined) even before the line that defines it?",
+    "answers": {
+      "a": "all of them",
+      "b": "const",
+      "c": "var",
+      "d": "let"
+    },
+    "correct": 2
+  },
+  {
+    "question": "Which of these is not a keyword in JavaScript?",
+    "answers": {
+      "a": "this",
+      "b": "catch",
+      "c": "function",
+      "d": "array"
+    },
+    "correct": 3
+  },
+  {
+    "question": "What method converts a JavaScript object to JSON format",
+    "answers": {
+      "a": "JSON.parse()",
+      "b": "JSON.fromString()",
+      "c": "JSON.stringify()",
+      "d": "JSON.parse()"
+    },
+    "correct": 2
+  },
+  {
+    "question": "Your code is producing the error: TypeError: Cannot read property 'reduce' of undefined. What does that mean?",
+    "answers": {
+      "a": "You are calling a method named reduce on an object that's declared but has no value.",
+      "b": "You are calling a method named reduce on an object that does not exist.",
+      "c": "You are calling a method named reduce on an empty array.",
+      "d": "You are calling a method named reduce on an object that's has a null value."
+    },
+    "correct": 1
+  },
+  {
+    "question": "What keyword is used to create an error?",
+    "answers": {
+      "a": "throw",
+      "b": "exception",
+      "c": "catch",
+      "d": "error"
+    },
+    "correct": 0
+  },
+  {
+    "question": "What is the correct method to cancel an event default behavior?",
+    "answers": {
+      "a": "cancel()",
+      "b": "stop()",
+      "c": "preventDefault()",
+      "d": "prevent()"
+    },
+    "correct": 2
+  },
+  {
+    "question": "This program has a problem. What is it?\nvar a\nvar b = (a = 3) ? true : false",
+    "answers": {
+      "a": "You cannot use a ternary operator in the right-hand side of an assignment.",
+      "b": "You cannot define a variable without initializing it first.",
+      "c": "The condition in the ternary statement is using the assignment operator.",
+      "d": "The code is using the deprecated var keyword."
+    },
+    "correct": 2
+  },
+  {
+    "question": "Which statement is used to skip iteration of the loop?",
+    "answers": {
+      "a": "break",
+      "b": "pass",
+      "c": "skip",
+      "d": "continue"
+    },
+    "correct": 3
+  },
+  {
+    "question": "How do you add an inline comment to JavaScript code?",
+    "answers": {
+      "a": "*! This is a comment*",
+      "b": "*# This is a comment*",
+      "c": "*\\ This is a comment*",
+      "d": "*// This is a comment*"
+    },
+    "correct": 3
+  },
+  {
+    "question": "Which statement is used to exit the iteration of a loop?",
+    "answers": {
+      "a": "break",
+      "b": "pass",
+      "c": "skip",
+      "d": "continue"
+    },
+    "correct": 0
+  },
+  {
+    "question": "In React which class-based lifecycle method would be called at the same time as the useEffect Hook?",
+    "answers": {
+      "a": "componentWillUnmount",
+      "b": "componentDidUpdate",
+      "c": "render",
+      "d": "componentDidMount"
+    },
+    "correct": 3
+  },
+  {
+    "question": "How is a forEach statement different from a for statement?",
+    "answers": {
+      "a": "Only a for statement uses a callback function.",
+      "b": "A for statement is generic, but a forEach statement can be used only with an array.",
+      "c": "Only a forEach statement lets you specify your own iterator.",
+      "d": "A forEach statement is generic, but a for statement can be used only with an array."
+    },
+    "correct": 1
+  },
+  {
+    "question": "What event is fired on a text field within a form when a user tabs to it, or clicks or touches it?",
+    "answers": {
+      "a": "focus",
+      "b": "blur",
+      "c": "hover",
+      "d": "enter"
+    },
+    "correct": 0
+  },
+  {
+    "question": "When would you use a conditional statement?",
+    "answers": {
+      "a": "When you want to reuse a set of statements multiple times.",
+      "b": "When you want your code to choose between multiple options.",
+      "c": "When you want to group data together.",
+      "d": "When you want to loop through a group of statements."
+    },
+    "correct": 1
+  },
+  {
+    "question": "You've written the event listener shown below for a form button, but each time you click the button, the page reloads. What statement would you add to stop this from happening?\nbutton.addEventListener('click',function (e) {\nbutton.className = 'clicked'}\n)",
+    "answers": {
+      "a": "e.blockReload()",
+      "b": "button.preventDefault()",
+      "c": "button.blockReload()",
+      "d": "e.preventDefault()"
+    },
+    "correct": 3
+  }
+]

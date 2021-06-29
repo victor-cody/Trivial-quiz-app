@@ -1,4 +1,5 @@
-[
+{
+	"questions" : [
 	{
 		"question": "What property is used to adjust the space between text characters?",
 		"answers": {
@@ -194,5 +195,6 @@
 			"d": "to set the color of the text"
 		},
 		"correct": 1
-	},
+	}
 ]
+}

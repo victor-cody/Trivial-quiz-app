@@ -11,7 +11,7 @@ const Home = () => {
 					<Link className="col-sm-7 a text-capitalize font-weight-bold btn my-3"
 					to='/categories'
 					>let's play</Link>
-					<Link className="col-sm-7 a text-capitalize font-weight-bold btn my-3">check highscores</Link>
+					<Link className="col-sm-7 a text-capitalize font-weight-bold btn my-3" to='/highcores' >check highscores</Link>
 				</div>
 
 			</div>

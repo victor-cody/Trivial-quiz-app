@@ -23,11 +23,11 @@ export const GameProvider = ({ children }) => {
 	const [MAX_QUESTIONS] = useState(20);
 
 	const setQuestions = (questions, type = 'SET_QUESTIONS') => {
-		dispatch(type, questions)
+		dispatch({type: type, questions: questions})
 	}
 
-	const setCategory = (category, type = 'SET_CATEGORY') => {
-		dispatch(type, category)
+	const setCategory = (data) => {
+		dispatch({type: 'SET_CATEGORY', category: data})
 	}
 
 	return (

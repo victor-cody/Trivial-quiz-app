@@ -6,12 +6,14 @@
 	import GameOption from "../../components/game-option/GameOption";
 	import { GameContex } from "../../contex/GameContex";
 	import Countdown from "../../components/Countdown/Countdown";
+	//Hook
+	// import useAxios from '../../components/Hook';
 
-	const Game = () => {
+	const Game = () => { 
 	const history = useHistory();
 
 	//States
-	const [availableQuestions, setAvailableQuestions] = useState([]);
+	// const [availableQuestions, setAvailableQuestions] = useState(null);
 	const [questionCounter, setQuestionCounter] = useState(0);
 	const [score, setScore] = useState(0);
 	const [showNextButton, setShowNextButton] = useState(false);
@@ -23,24 +25,35 @@
 	const { chosenCategory, BONUS, MAX_QUESTIONS, QUESTION_TIME } =
 	useContext(GameContex);
 
+	console.log(chosenCategory);
 	// Querying the database
-	const [questions, loading, error, refresh] = useHarperDB({
-	query: { operation: "sql", sql: `select * from quizzes.${chosenCategory}` },
+	const [data, loading, error] = useHarperDB({
+	query: {
+		operation: "sql",
+		sql: `SELECT * FROM questions.${chosenCategory}`
+	},
 	});
 
-	useEffect(() => {
-	setAvailableQuestions(...questions);
+	let availableQuestions = [];
+
+	console.log(data);
+
+	function startGame() {
+
+	// setAvailableQuestions(data);
+	availableQuestions = Array.from(data);
 	console.log(availableQuestions);
+	getNewQuestion();
 	setScore(0);
 	setQuestionCounter(0);
 	setTimerID(setInterval(countDownTime, 1000));
-	}, [chosenCategory, questions]);
+	}
 
-	const getNewQuestion = () => {
+	function getNewQuestion() {
 	//Go to end game page if all questions have been rendered
-	if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-		localStorage.setItem("mostRecentScore", score);
-		localStorage.setItem("maxScore", MAX_QUESTIONS * BONUS);
+	if (data?.length === 0 && questionCounter >= MAX_QUESTIONS) {
+		// localStorage.setItem("mostRecentScore", score);
+		// localStorage.setItem("maxScore", MAX_QUESTIONS * BONUS);
 		return history.push("/end");
 	}
 
@@ -49,15 +62,22 @@
 
 	//then select and render random question from questions array
 	setQuestionCounter((prev) => prev++);
-	const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-	setcurrentQuestion(availableQuestions[questionIndex]);
+	const questionIndex = Math.floor(Math.random() * data.length);
+
+	console.log(`this is the index \n ${[questionIndex]}`);
+
+	setcurrentQuestion(data[questionIndex]);
+
+	console.log(`the current question is ${currentQuestion}`);
+
+	console.log(`this is the question \n ${data[questionIndex]}`);
 
 	//Remove just rendered question from the question array
-	setAvailableQuestions((prev) => prev.splice(questionIndex, 1));
-
+	[data].splice(questionIndex, 1)
+	console.log(`this is the available questions \n ${[data]}`);
 	//Start the count down
 	setCountDown(true);
-	};
+	}
 
 	//Timer function
 	const countDownTime = () => {
@@ -65,7 +85,7 @@
 		setTimer((prev) => prev++);
 	} else {
 		setTimer(0);
-		getNewQuestion();
+		// getNewQuestion();
 	}
 	};
 
@@ -99,44 +119,55 @@
 	}, 2000);
 	};
 
-	if (loading) {
-	return <h2>Loading...</h2>;
-	}
+		useEffect(() => {
 
-	// start game if their are available questions or if we haven't exceeded the maximum number of questions
-	if (
-	(availableQuestions && availableQuestions.length > 0)
-	) {
+			startGame()
+
+			return () => {
+				const abort = new AbortController();
+				abort.abort();
+			};
+		}, [chosenCategory]);
+
 	return (
+		
+		<div className="container">
+				{loading && (
+		<h2>Loading...</h2>
+	) }
+
+	{(data && data.length > 0) && (
 		<div className="container">
 		<section>
-			<h2>{chosenCategory}</h2>
+			<h2 className="text-center text-title h1" >{chosenCategory}</h2>
 
-			<header className="header">
-			<div className="d-flex align-items-center justify-content-between flex-column">
+			< header className = "header row align-items-center justify-content-between" >
+			<div className="d-flex align-items-center justify-content-between flex-column col-md-4">
 				<p className="counter text-center h2">
 				Question {questionCounter}/{MAX_QUESTIONS}{" "}
 				</p>
 				<ProgressBar counter={questionCounter} />
 			</div>
 
-			<div className="d-flex align-items-center justify-content-between  flex-column">
+			<div className="d-flex align-items-center justify-content-between  flex-column col-md-4">
 				<p className="text-center h2">Score</p>
 				<h2 className="score display-3 font-weight-bold">{score}</h2>
-			</div>
+			</div>		
 			</header>
 
 			{
-			// using the Object.entries method to loop over our answers object
-			Object.entries(currentQuestion.answers).map((answer, id) => (
-				<GameOption
-				key={"choice" + id}
-				option={answer[0]}
-				text={answer[1]}
-				id={id}
-				callback={evaluateChoice}
-				/>
-			))
+			// 		console.log(`the current question is now ${JSON.stringify(currentQuestion)}`, availableQuestions)
+		
+			// ( currentQuestion && Object.entries(currentQuestion?.answers).map((answer, id) => (
+			// 	<GameOption
+			// 	key={"choice" + id}
+			// 	option={answer[0]}
+			// 	text={answer[1]}
+			// 	id={id}
+			// 	callback={evaluateChoice}
+			// 	/>
+
+			// )))
 			}
 
 			<Countdown counter={timer} />
@@ -162,10 +193,19 @@
 			)}
 		</section>
 		</div>
-	);
-	} else {
-	return <div>{error}</div>;
+	)}
+
+	 {
+		 error && (
+		<>
+		<div>There was an error</div>
+		{console.log(error)}
+		</>
+	)
 	}
+		</div>
+	) 
+	
 	};
 
 	export default Game;

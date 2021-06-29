@@ -1,0 +1,596 @@
+{
+	"css": [
+		{
+			"question": "What property is used to adjust the space between text characters?",
+			"answers": {
+				"a": "font-style",
+				"b": " text-transform",
+				"c": "font-variant",
+				"d": "letter-spacing"
+			},
+			"correct": 3
+		},
+		{
+			"question": "What is the line-height property primarily used for?",
+			"answers": {
+				"a": "to control the height of the space between two lines of content",
+				"b": "to control the height of the space between heading elements",
+				"c": "to control the height of the character size",
+				"d": "to control the width of the space between characters"
+			},
+			"correct": 0
+		},
+		{
+			"question": "Which is NOT true about class selectors?",
+			"answers": {
+				"a": "Multiple classes can be used within the same element.",
+				"b": "The same class can be used multiple times per page.",
+				"c": "Class selectors with a leading period",
+				"d": "Classes can be used multiple times per page but not within the same element."
+			},
+			"correct": 3
+		},
+		{
+			"question": "How would you make the first letter of every paragraph on the page red?",
+			"answers": {
+				"a": "p::first-letter { color: red; }",
+				"b": "p:first-letter { color: red; }.",
+				"c": "first-letter::p { color: red; }",
+				"d": "first-letter:p { color: red; }"
+			},
+			"correct": 3
+		},
+		{
+			"question": "Which of the following is not a valid color value?",
+			"answers": {
+				"a": "color: #000",
+				"b": "color: rgb(0,0,0).",
+				"c": "color: #000000",
+				"d": "color: 000000"
+			},
+			"correct": 3
+		},
+		{
+			"question": "When using position: abosolute, what will the element always be positioned relative to?",
+			"answers": {
+				"a": "the closest element with position: relative",
+				"b": "the browser's viewport",
+				"c": "the parent element",
+				"d": "the wrapper element"
+			},
+			"correct": 0
+		},
+		{
+			"question": "When using Flexbox, what property and value is used to display flex items in a column?",
+			"answers": {
+				"a": "flex-flow: column; or flex-direction: column",
+				"b": "flex-flow: column;",
+				"c": "flex-column: auto;",
+				"d": "flex-direction: column;"
+			},
+			"correct": 0
+		},
+		{
+			"question": "Which of these properties should be used to align a global navigation bar which stays fixed at the top of the page?",
+			"answers": {
+				"a": "position",
+				"b": "flexbox",
+				"c": "grid",
+				"d": "float"
+			},
+			"correct": 0
+		},
+		{
+			"question": "when will the color pink be applied to the anchor element, In the example below?\n\na:active {  color: pink; }",
+			"answers": {
+				"a": "The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.",
+				"b": "The color of the link will display as pink on mouse hover.",
+				"c": "The color of the link will display as pink while the link is being clicked but before the mouse click is released.",
+				"d": "The color of the link will display as pink before it has been clicked."
+			},
+			"correct": 2
+		},
+		{
+			"question": "Which property would you used, To change the color of an SVG using CSS? ",
+			"answers": {
+				"a": "Use background-fill to set the color inside the object and stroke or border to set the color of the border.",
+				"b": "The color cannot be changed with CSS.",
+				"c": "Use fill or background to set the color inside the object and stroke to set the color of the border.",
+				"d": "Use fill to set the color inside the object and stroke to set the color of the border."
+			},
+			"correct": 3
+		},
+		{
+			"question": "When using position: fixed, what will the element always be positioned relative to?",
+			"answers": {
+				"a": "the closest element with position: relative",
+				"b": "the browser's viewport",
+				"c": "the parent element",
+				"d": "the wrapper element"
+			},
+			"correct": 1
+		},
+		{
+			"question": "When using media queries, media types are used to target a device category. Which choice lists current valid media types?",
+			"answers": {
+				"a": "print, screen, aural",
+				"b": "print, screen, television",
+				"c": "print, screen, speech",
+				"d": "print, speech, device"
+			},
+			"correct": 2
+		},
+		{
+			"question": "What is the rem unit based on?",
+			"answers": {
+				"a": "The rem unit is relative to the font-size of the p element.",
+				"b": "You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }",
+				"c": "The rem unit is relative to the font-size of the containing (parent) element.",
+				"d": "The rem unit is relative to the font-size of the root (html) element of the page."
+			},
+			"correct": 3
+		},
+		{
+			"question": "How would you give a block element rounded corners?",
+			"answers": {
+				"a": "corner-curve: 10px",
+				"b": "border-corner: 10px",
+				"c": "border-radius: 10px",
+				"d": "corner-radius: 10px"
+			},
+			"correct": 2
+		},
+		{
+			"question": "What is the difference between display:none and visibility:hidden?",
+			"answers": {
+				"a": "display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document",
+				"b": "display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.",
+				"c": "There is no difference; both will hide the element on the page"
+			},
+			"correct": 1
+		},
+		{
+			"question": "Which would properly scale an element to be 50% smaller on hover?",
+			"answers": {
+				"a": "element:hover {transform: scale(50%);}",
+				"b": "element:hover {transform: scale(0.5);}",
+				"c": "element:hover {scale: 50%;}"
+			},
+			"correct": 1
+		},
+		{
+			"question": "What is not true about class selectors?",
+			"answers": {
+				"a": "Only one class value can be assigned to an element.",
+				"b": "An element can have multiple class value.",
+				"c": "Class selectors are marked with a leading period.",
+				"d": "More than one element can have the same class value."
+			},
+			"correct": 0
+		},
+		{
+			"question": "What is the difference between the margin and padding properties?",
+			"answers": {
+				"a": "Margin adds space around and inside of an element; padding adds space only inside of an element.",
+				"b": "Margin adds space around an element; padding adds apace inside of an element.",
+				"c": "Margin adds a line around an element, padding adds space inside of an element.",
+				"d": "Margin adds space inside of an element, padding adds space around an element."
+			},
+			"correct": 1
+		},
+		{
+			"question": "Which style places an element at a fixed location within its container?",
+			"answers": {
+				"a": "position: absolute;",
+				"b": "display: flex;",
+				"c": "display: block;",
+				"d": "float: left;"
+			},
+			"correct": 0
+		},
+		{
+			"question": "When would you use the @font-face method?",
+			"answers": {
+				"a": "to set the font size of the text",
+				"b": "to load custom fonts into a stylesheet",
+				"c": "to change the name of the font declared in the font-family",
+				"d": "to set the color of the text"
+			},
+			"correct": 1
+		}
+	],
+	"html": [
+		{
+			"question": "Which of these statement is FALSE ?",
+			"answers": {
+				"a": "Inline elements can be nested inside inline elements.",
+				"b": "Block elements can be nested inside block elements.",
+				"c": "Inline elements can be nested inside block elements.",
+				"d": "Block elements can be nested inside inline elements."
+			},
+			"correct": 3
+		},
+		{
+			"question": "When is the <link> tag used?",
+			"answers": {
+				"a": "when linking style sheets, JavaScript, and icons for mobile apps",
+				"b": "when linking style sheets, favicons, and preloading assets",
+				"c": "when linking style sheets and favicons",
+				"d": "when linking style sheets, external URLs, and favicons"
+			},
+			"correct": 2
+		},
+		{
+			"question": "In HTML5, which tag or tags embed a webpage inside of a webpage?",
+			"answers": {
+				"a": "<iframe>, <frame>, and <frameset>",
+				"b": "<frame>",
+				"c": "<iframe>",
+				"d": "<frame> and <frameset>"
+			},
+			"correct": 2
+		},
+		{
+			"question": "Which is the best way to apply bold styling to text?",
+			"answers": {
+				"a": "<strong>",
+				"b": "Using CSS",
+				"c": "<bold>",
+				"d": "<b>"
+			},
+			"correct": 0
+		},
+		{
+			"question": "With which tags is the <source> element associated?",
+			"answers": {
+				"a": "<svg>, <picture>, <audio>, and <video>",
+				"b": "<picture>, <audio>, and <video>",
+				"c": "It is interchangeable with the src attribute, so any element which uses src may use <source>",
+				"d": "<audio> and <video>"
+			},
+			"correct": 1
+		},
+		{
+			"question": "When should you use <ol> and <ul> elements?",
+			"answers": {
+				"a": "Use <ul> when you want a bulleted list and <ol> when you want a numbered list.",
+				"b": "Use <ul> when you have a list of items in which the order of the items matters. Use <ol> when you have a list of items that could go in any order.",
+				"c": "Use <ol> when you want a bulleted list and <ul> when you want a numbered list.",
+				"d": "Use <ol> when you have a list of items in which the order of the items matters. Use <ul> when you have a list of items that could go in any order."
+			},
+			"correct": 0
+		},
+		{
+			"question": "What is the difference between the post and get methods in a form?",
+			"answers": {
+				"a": "post is used for sending information to the server. get is used for retrieving form information from the server.",
+				"b": "get is used for sending information to the server. post is used for retrieving form information from the server.",
+				"c": "With get, data is included in the form body when send to the server. With post, the data goes through the URL.",
+				"d": "With post, data is included in the form body when send to the server. With get, the data goes through the URL."
+			},
+			"correct": 3
+		},
+		{
+			"question": "What is the difference between the <div> and <span> tags?",
+			"answers": {
+				"a": "<div> is used where a generic block-level tag is needed, while <span> is used where a generic inline tag is needed.",
+				"b": "<div> is used for major divisions on a page, while <span> is used to span across columns.",
+				"c": "<div> is the industry-standard default tag, but you could use <span> if you prefer.",
+				"d": "<div> is used where a generic inline tag is needed, while <span> is used where a generic block-level tag is needed."
+			},
+			"correct": 0
+		},
+		{
+			"question": "Which statement is true about the defer attribute of the HTML script tag?",
+			"answers": {
+				"a": "The defer attribute can work synchronously.",
+				"b": "The defer attribute works only with generators.",
+				"c": "The defer attribute works only with promises.",
+				"d": "The defer attribute will asynchronously load the scripts in order."
+			},
+			"correct": 3
+		},
+		{
+			"question": "What is the difference between the <head> and <header> tags in HTML?",
+			"answers": {
+				"a": "There is only one <head> tag per page, while there may be many <header> tags.",
+				"b": "The <head> tag may contain CSS and Javascript links, while the <header> tag may contain headings and navigational links.",
+				"c": "all of these answers",
+				"d": "The <head> tag contains meta information, while the <header> tag contains navigation, logos, and other page identifying content."
+			},
+			"correct": 2
+		},
+		{
+			"question": "What does the <label> tag do?",
+			"answers": {
+				"a": "It labels webpages with important information.",
+				"b": "It visually associates a text label with an interface element.",
+				"c": "It visually labels from fields.",
+				"d": "It programmatically associates a text label with an interface element."
+			},
+			"correct": 3
+		},
+		{
+			"question": "Which tag is the root element of an HTML document?",
+			"answers": {
+				"a": "<DOCTYPE html>",
+				"b": "<html>",
+				"c": "<body>",
+				"d": "<root>"
+			},
+			"correct": 1
+		},
+		{
+			"question": "What is the purpose of the async keyword in a script tag?",
+			"answers": {
+				"a": "It will download the script from the server when resources allow.",
+				"b": "It will run the script after HTML parsing is complete.",
+				"c": "It makes the script run when the script is ready.",
+				"d": "It pauses the parsing of HTML code while the script runs."
+			},
+			"correct": 2
+		},
+		{
+			"question": "In the code below, what is the purpose of the **id** attribute?\n\n<p id='warning'>Be careful when installing this product.</p>",
+			"answers": {
+				"a": "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage.",
+				"b": "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
+				"c": "It establishes that id may be used for styling CSS several times per page.",
+				"d": "It establishes that id is a regular identifier in the website, used for styling CSS, scripting, and linking within a webpage"
+			},
+			"correct": 0
+		},
+		{
+			"question": "How do you confirm that a document is written in HTML5?",
+			"answers": {
+				"a": "The server wraps the webpage in an HTML5 wrapper.",
+				"b": "There should be a <!DOCTYPE html> declaration that starts the document.",
+				"c": "The browser receives encoding from the server to display the document with HTML5.",
+				"d": "It is enclosed in a <html> tag."
+			},
+			"correct": 1
+		},
+		{
+			"question": "What is the semantic use of the <hr> ?",
+			"answers": {
+				"a": "This tag is depreciated and should not be used.",
+				"b": "It designates a topic shift within a section at the paragraph level.",
+				"c": "It draws a horizontal line.",
+				"d": "It designates a shift of topic at the section level."
+			},
+			"correct": 1
+		},
+		{
+			"question": "What do you use the <label> tag for?",
+			"answers": {
+				"a": "To labels webpages with important information.",
+				"b": "To visually associates a text label with an interface element.",
+				"c": "To visually labels from fields.",
+				"d": "To programmatically associates a text label with an interface element."
+			},
+			"correct": 3
+		},
+		{
+			"question": "What does the **poster** attribute do in the <video> tag?",
+			"answers": {
+				"a": "It specifies an image that should display while the video downloads and until the video is played.",
+				"b": "It specifies an image that only displays if there is a problem with the video.",
+				"c": "It specifies an image that should display until the video is played.",
+				"d": "It specifies an image that should display while the video downloads."
+			},
+			"correct": 0
+		},
+		{
+			"question": "Which of these image formats is supported by all web browsers?",
+			"answers": {
+				"a": "JPG, GIF, TIF",
+				"b": "JPG, TIF, BMP",
+				"c": "TIF, BMP, GIF",
+				"d": "PNG, GIF, JPG"
+			},
+			"correct": 3
+		}
+	],
+	"javascript": [
+		{
+			"question": "Which operator returns true if the two compared values are not equal?",
+			"answers": {
+				"a": "()",
+				"b": "~",
+				"c": "==!",
+				"d": "!=="
+			},
+			"correct": 3
+		},
+		{
+			"question": "Which of the statements is the correct way to create a variable called rate and assign it a value of 100?",
+			"answers": {
+				"a": "let rate = 100;",
+				"b": "let 100 = rate;",
+				"c": "100 = let rate;",
+				"d": "rate = 100;"
+			},
+			"correct": 0
+		},
+		{
+			"question": "Which of the statements creates a new function called totalPrice?",
+			"answers": {
+				"a": "let totalPrice = function(price) { return price * 0.85; };",
+				"b": "let totalPrice(price) { return price * 0.85; };",
+				"c": "let function = totalPrice(price) { return price * 0.85; };",
+				"d": "totalPrice = function(price) { return price * 0.85; };"
+			},
+			"correct": 0
+		},
+		{
+			"question": "What is the property that references the DOM element/object that dispatched an event?",
+			"answers": {
+				"a": "self",
+				"b": "object",
+				"c": "target",
+				"d": "source"
+			},
+			"correct": 2
+		},
+		{
+			"question": "What method converts JSON data to a JavaScript object?",
+			"answers": {
+				"a": "JSON.fromString()",
+				"b": "JSON.parse()",
+				"c": "JSON.toObject()",
+				"d": "JSON.stringify()"
+			},
+			"correct": 1
+		},
+		{
+			"question": "Which Variable-defining keyword allows its variable to be accessed (as undefined) even before the line that defines it?",
+			"answers": {
+				"a": "all of them",
+				"b": "const",
+				"c": "var",
+				"d": "let"
+			},
+			"correct": 2
+		},
+		{
+			"question": "Which of these is not a keyword in JavaScript?",
+			"answers": {
+				"a": "this",
+				"b": "catch",
+				"c": "function",
+				"d": "array"
+			},
+			"correct": 3
+		},
+		{
+			"question": "What method converts a JavaScript object to JSON format",
+			"answers": {
+				"a": "JSON.parse()",
+				"b": "JSON.fromString()",
+				"c": "JSON.stringify()",
+				"d": "JSON.parse()"
+			},
+			"correct": 2
+		},
+		{
+			"question": "Your code is producing the error: TypeError: Cannot read property 'reduce' of undefined. What does that mean?",
+			"answers": {
+				"a": "You are calling a method named reduce on an object that's declared but has no value.",
+				"b": "You are calling a method named reduce on an object that does not exist.",
+				"c": "You are calling a method named reduce on an empty array.",
+				"d": "You are calling a method named reduce on an object that's has a null value."
+			},
+			"correct": 1
+		},
+		{
+			"question": "Which choice is an incorrect way to define an arrow function that returns an empty object?",
+			"answers": {
+				"a": "'() => ({})'",
+				"b": "'() => {}'",
+				"c": "'() => { return {};}'",
+				"d": "'() => (({}))'"
+			},
+			"correct": 1
+		},
+		{
+			"question": "What keyword is used to create an error?",
+			"answers": {
+				"a": "throw",
+				"b": "exception",
+				"c": "catch",
+				"d": "error"
+			},
+			"correct": 0
+		},
+		{
+			"question": "Which statement references the DOM element created by the code shown? \n <p class='pull'>lorem ipsum</p>",
+			"answers": {
+				"a": "Document.querySelector('class.pull')",
+				"b": "document.querySelector('.pull')",
+				"c": "document.querySelector('pull')",
+				"d": "document.querySelector('#pull')"
+			},
+			"correct": 1
+		},
+		{
+			"question": "What is the correct method to cancel an event default behavior?",
+			"answers": {
+				"a": "cancel()",
+				"b": "stop()",
+				"c": "preventDefault()",
+				"d": "prevent()"
+			},
+			"correct": 2
+		},
+		{
+			"question": "This program has a problem. What is it?\nvar a;\nvar b = (a = 3) ? true : false;",
+			"answers": {
+				"a": "You cannot use a ternary operator in the right-hand side of an assignment.",
+				"b": "You cannot define a variable without initializing it first.",
+				"c": "The condition in the ternary statement is using the assignment operator.",
+				"d": "The code is using the deprecated var keyword."
+			},
+			"correct": 2
+		},
+		{
+			"question": "Which statement is used to skip iteration of the loop?",
+			"answers": {
+				"a": "break",
+				"b": "pass",
+				"c": "skip",
+				"d": "continue"
+			},
+			"correct": 3
+		},
+		{
+			"question": "How do you add an inline comment to JavaScript code?",
+			"answers": {
+				"a": "*! This is a comment*",
+				"b": "*# This is a comment*",
+				"c": "*\\ This is a comment*",
+				"d": "*// This is a comment*"
+			},
+			"correct": 3
+		},
+		{
+			"question": "Which statement correctly selects all img elements in the DOM tree?",
+			"answers": {
+				"a": "document.querySelector('img')",
+				"b": "document.querySelectorAll('<img>')",
+				"c": "document.querySelectorAll('img')",
+				"d": "document.querySelector('<img>')"
+			},
+			"correct": 2
+		},
+		{
+			"question": "In React which class-based lifecycle method would be called at the same time as the useEffect Hook?",
+			"answers": {
+				"a": "componentWillUnmount",
+				"b": "componentDidUpdate",
+				"c": "render",
+				"d": "componentDidMount"
+			},
+			"correct": 3
+		},
+		{
+			"question": "What event is fired on a text field within a form when a user tabs to it, or clicks or touches it?",
+			"answers": {
+				"a": "focus",
+				"b": "blur",
+				"c": "hover",
+				"d": "enter"
+			},
+			"correct": 0
+		},
+		{
+			"question": "You've written the event listener shown below for a form button, but each time you click the button, the page reloads. What statement would you add to stop this from happening?\nbutton.addEventListener('click',function (e) {\nbutton.className = 'clicked';}\n);",
+			"answers": {
+				"a": "e.blockReload()",
+				"b": "button.preventDefault()",
+				"c": "button.blockReload()",
+				"d": "e.preventDefault()"
+			},
+			"correct": 3
+		}
+	]
+}

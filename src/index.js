@@ -1,4 +1,3 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HarperDBProvider } from "use-harperdb";
@@ -13,9 +12,7 @@ ReactDOM.render(
       user={process.env.REACT_APP_USER}
       password={process.env.REACT_APP_PASSWORD}
     >
-   <Router>
       <App />
-   </Router>
     </HarperDBProvider>
   </React.StrictMode>,
   document.getElementById('root')

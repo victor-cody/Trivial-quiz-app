@@ -9,7 +9,7 @@ export default function AppReducer (state, action) {
 		case 'SET_CATEGORY':
 			return {
 				...state,
-				category: action.category
+				chosenCategory: action.category
 			}
 	
 		default:
