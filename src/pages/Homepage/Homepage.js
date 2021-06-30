@@ -4,16 +4,19 @@
 	export default function HomePage() {
 	return (
 		<>
+		<header className="">
+			<nav className="nav"></nav>
+		</header>
 		<main className="container">
 			<PageSection
 			classes={`intro row align-items-center justify-content-between`}
 			>
 			<ScrollAnimation animateIn="fadeInLeft">
-				<h2 className="font-weight-light text-small">
-				300+ CHEETSHEETS. SORTING. OPEN SOURCE. CATEGORIES.
+				<div className="col-md-9 col-lg-6 col-xl-5">
+					<h2 className="font-weight-light text-small">
+					300+ CHEETSHEETS. SORTING. OPEN SOURCE. CATEGORIES.
 				</h2>
-				<h3 className="font-weight-bold display-2 text-danger">
-				{" "}
+				<h3 className="font-weight-bold display-3 text-danger">
 				World biggest storehouse of developer cheetsheets
 				</h3>
 				<p className="">
@@ -23,9 +26,12 @@
 				popularity, dark mode, bookmark cheatsheets, add new cheatsheets,
 				request feature, and much more features, make the app amazing! 🤟
 				</p>
+				</div>
 			</ScrollAnimation>
 			<ScrollAnimation>
-				<img src="" alt="" className="" />
+				<div className="col-md-9 col-lg-6 col-xl-5">
+					<img src="" alt="" className="img-fluid" />
+				</div>
 			</ScrollAnimation>
 			</PageSection>
 
@@ -34,11 +40,19 @@
 					<h2 className="display-2 font-weight-bold">About Trivia Quizzes</h2>
 				</ScrollAnimation>
 
-				<div className="rounded w-100 px-3py-2 bg-light">
+				<ScrollAnimation animateIn='fadeInUp'>
+					<div className="rounded w-100 px-3 py-2 bg-light shine">
 
 				</div>
+				</ScrollAnimation>
+			</PageSection>
+			<PageSection>
+					<ScrollAnimation animateIn="bounceInUp"><h2 className="display-2 font-weight-bold">Features</h2></ScrollAnimation>
 			</PageSection>
 		</main>
+		<footer className='' >
+
+		</footer>
 		</>
 	);
 	}
