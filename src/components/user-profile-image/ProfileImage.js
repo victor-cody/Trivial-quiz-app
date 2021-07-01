@@ -6,7 +6,8 @@ const ProfileImage = () => {
 	const { user } = useAuth0();
 	const { name, picture} = user ;
 	return (
-		<Link className="d-flex align-items-center justify-content-between rounded-md px-2 py-2 bg-light profile">
+		<Link className="d-flex align-items-center justify-content-between rounded-md px-2 py-2 bg-light profile" 
+		to='#'>
 			<span className="text-dark font-weight-bold profile-name">
 				{name}
 			</span>

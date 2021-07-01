@@ -21,7 +21,6 @@ import PreGame from "./components/Pre-Game/PreGame";
 import { GameProvider } from "./contex/GameContex";
 import Game from "./pages/Game/Game";
 import HomePage from "./pages/Homepage/Homepage";
-import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -29,7 +28,7 @@ function App() {
 
   if (isLoading) {
     return (
-        <Loader/>
+      <Loader />
     )
   }
 
@@ -40,17 +39,16 @@ function App() {
   return (
     <>
       <GameProvider>
-          <div className="container">
-            <Switch>
-              <Route path="/" exact component={HomePage} />
-              <Route path="/get-started" component={Home} />
-              {/* <Route path="/auth/sign-up" component={SignUpForm} />
+        <div className="container">
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/get-started" component={Home} />
+            {/* <Route path="/auth/sign-up" component={SignUpForm} />
             <Route path="/auth/login" component={LoginForm} /> */}
-              <Route path="/categories" component={PreGame} />
+            <Route path="/categories" component={PreGame} />
             <ProtectedRoute path="/game" component={Game} />
-            </Switch>
-          </div>
-          <Footer/>
+          </Switch>
+        </div>
       </GameProvider>
     </>
   );

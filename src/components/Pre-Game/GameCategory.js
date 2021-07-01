@@ -11,7 +11,7 @@ const GameCategory = ({ symbol, name, bg, category, des = '' }) => {
 	return (
 
 
-		<div className="col-md-5 my-3 mx-2 py-4 px-2  text-center category" style={{
+		<div className="col-md-4  card my-3 mx-1 py-4 px-2  text-center category" style={{
 				backgroundColor: bg
 			}}
 			onClick={() => {
@@ -19,9 +19,9 @@ const GameCategory = ({ symbol, name, bg, category, des = '' }) => {
 				history.push('/game')
 			}}
 			>
-				<span className='display-4' >{symbol}</span>
-			<h3 className="text-capitalize mb-3 mt-2">{name}</h3>
-			<p className="mb-0">{des}</p>
+			<span className='display-4' >{symbol}</span>
+			<h3 className="text-capitalize card-title mb-3 mt-2">{name}</h3>
+			<p className="mb-0 card-body">{des}</p>
 			</div>
 
 	);

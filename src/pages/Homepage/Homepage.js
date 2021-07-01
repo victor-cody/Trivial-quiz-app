@@ -1,13 +1,15 @@
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from 'react-router-dom';
 import PageSection from "../../components/PageSection/PageSection";
 import GithubStars from '../../components/github-star-count/GithubStars';
 import Footer from '../../components/Footer/Footer';
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function HomePage() {
 return (
 	<>
 		<header className="">
-			<nav className="nav"></nav>
+			<Navbar/>
 		</header>
 		<main className="container">
 			<PageSection

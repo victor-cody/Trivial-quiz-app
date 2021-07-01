@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
 import GameCategory from './GameCategory';
 
 const PreGame = () => {
@@ -10,6 +11,8 @@ const PreGame = () => {
 		{ name: 'python', category: 'python', symbol: '🐍', bg: '#28a745', des: `Hiss Hiss` }
 	];
 	return (
+		<>
+		<Navbar/>
 		<div className="container">
 			<h3 className="display-4">How To Play</h3>
 			<ul>
@@ -32,6 +35,7 @@ const PreGame = () => {
 				}
 			</div>
 		</div>
+		</>
 	);
 };
 
