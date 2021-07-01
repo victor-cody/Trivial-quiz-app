@@ -1,0 +1,19 @@
+.profile{
+	flex-wrap: wrap;
+	text-overflow: clip;
+	
+	&-name {
+		width: 0%;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&-picture{
+		width: 30%;
+	}
+
+	&:hover{
+		&-name{
+			width: 70%;
+		}
+	}
+}
