@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { useHarperDB } from "use-harperdb";
 //Components
+import Loader from '../../components/Loader/Loader';
 import ProfileImage from '../../components/user-profile-image/ProfileImage';
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import GameOption from "../../components/game-option/GameOption";
@@ -133,9 +134,7 @@ const Game = () => {
 
 	if (loading) {
 		return (
-			<div className="container">
-				<h2>Loading...</h2>
-			</div>
+			<Loader />
 		)
 	}
 
@@ -152,72 +151,70 @@ const Game = () => {
 
 	if (data && data.length > 0) {
 		return (
-			<div className="container">
-				<section>
+			<section className='d-flex justify-content-center flex-column align-items-center'>
 
-					< header className="header d-flex flex-column h-100 justify-content-between" >
-						<div className="d-flex justify-content-between align-items-center">
-							<h2 className="text-center text-title h1" >{chosenCategory}</h2>
-							<ProfileImage/>
+				< header className="header d-flex flex-column px-2 py-2 justify-content-between" >
+					<div className="d-flex justify-content-between align-items-center">
+						<h2 className="text-center text-capitalize h1 font-weight-light" >{chosenCategory}</h2>
+						<ProfileImage />
+					</div>
+					<div className="row align-items-center justify-content-between">
+						<div className="d-flex align-items-center justify-content-between flex-column col-md-4">
+							<p className="counter text-center h2">
+								Question {questionCounter}/{MAX_QUESTIONS}{" "}
+							</p>
+							<ProgressBar counter={questionCounter} />
 						</div>
-						<div className="row align-items-center justify-content-between">
-							<div className="d-flex align-items-center justify-content-between flex-column col-md-4">
-								<p className="counter text-center h2">
-									Question {questionCounter}/{MAX_QUESTIONS}{" "}
-								</p>
-								<ProgressBar counter={questionCounter} />
-							</div>
 
-							
 
-							<div className="d-flex align-items-center justify-content-between  flex-column col-md-4">
-								<p className="text-center h2">Score</p>
-								<h2 className="score display-3 font-weight-bold">{score}</h2>
-							</div>
+
+						<div className="d-flex align-items-center justify-content-between  flex-column col-md-4">
+							<p className="text-center h2">Score</p>
+							<h2 className="score display-3 font-weight-bold">{score}</h2>
 						</div>
-					</header>
+					</div>
+				</header>
 
-					<p className="display-3 mb-3 mt-1">
-						{currentQuestion.question}
-					</p>
+				{(currentQuestion && <p className="display-3 mb-3 mt-1 font-weight-light">
+					{currentQuestion.question}
+				</p>)}
 
-					{
-								// console.log(`the current question is now ${JSON.stringify(currentQuestion)}`, availableQuestions)
-						( currentQuestion && Object.entries(currentQuestion?.answers).map((answer, id) => (
-							<GameOption
+				{
+					// console.log(`the current question is now ${JSON.stringify(currentQuestion)}`, availableQuestions)
+					(currentQuestion && Object.entries(currentQuestion?.answers).map((answer, id) => (
+						<GameOption
 							key={"choice" + id}
 							option={answer[0]}
 							text={answer[1]}
 							id={id}
 							callback={evaluateChoice}
-							/>
+						/>
 
-						)))
-					}
+					)))
+				}
 
-					<Countdown counter={timer} />
+				<Countdown counter={timer} />
 
-					{showNextButton && (
-						<button
-							className="col-sm-7 a text-capitalize font-weight-bold btn mt-3 mb-1"
-							onClick={(e) => {
-								e.preventDefault();
-								// removing the 'correct' and 'incorrect' class from each of the options element
-								[
-									...document.getElementsByClassName("choice-container"),
-								].forEach((element) => {
-									element.classList.remove("correct");
-									element.classList.remove("incorrect");
-								});
-								// getting a new question
-								getNewQuestion();
-							}}
-						>
-							continue
-						</button>
-					)}
-				</section>
-			</div>
+				{showNextButton && (
+					<button
+						className="col-sm-7 a shine text-capitalize font-weight-bold btn mt-3 mb-1"
+						onClick={(e) => {
+							e.preventDefault();
+							// removing the 'correct' and 'incorrect' class from each of the options element
+							[
+								...document.getElementsByClassName("choice-container"),
+							].forEach((element) => {
+								element.classList.remove("correct");
+								element.classList.remove("incorrect");
+							});
+							// getting a new question
+							getNewQuestion();
+						}}
+					>
+						continue
+					</button>
+				)}
+			</section>
 		)
 	}
 	else {

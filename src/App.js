@@ -11,6 +11,8 @@ import "./assets/animate/animate.css";
 
 import "./assets/sass/_variables.scss";
 import "./assets/sass/App.scss";
+
+import Loader from './components/Loader/Loader';
 import Home from "./components/Homepage/Home";
 // import SignUpForm from "./pages/auth/signup/Signup";
 import PreGame from "./components/Pre-Game/PreGame";
@@ -27,7 +29,7 @@ function App() {
 
   if (isLoading) {
     return (
-        <h2>Loading</h2>
+        <Loader/>
     )
   }
 
