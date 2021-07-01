@@ -24,14 +24,16 @@ function App() {
     <>
       <GameProvider>
         <Router>
-          <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route path="/get-started"  component={Home} />
-            {/* <Route path="/auth/sign-up" component={SignUpForm} />
+          <div className="container">
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/get-started" component={Home} />
+              {/* <Route path="/auth/sign-up" component={SignUpForm} />
             <Route path="/auth/login" component={LoginForm} /> */}
-            <Route path="/categories" component={PreGame} />
-            <Route path="/game" component={Game} />
-          </Switch>
+              <Route path="/categories" component={PreGame} />
+              <Route path="/game" component={Game} />
+            </Switch>
+          </div>
         </Router>
       </GameProvider>
     </>
