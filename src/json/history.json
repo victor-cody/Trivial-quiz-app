@@ -1,0 +1,186 @@
+[
+    {
+      "question":"Whose 2016 presidential campaign slogan was 'Make America Great Again'?",
+      "choice1": "Bernie Sanders",
+      "choice2": "Marco Rubio",
+      "choice3": "Ted Cruz",
+      "choice4": "Donald Trump",
+      "answer": "4"
+    },
+    {
+        "question":"Who was the British Prime Minister at the outbreak of the Second World War?",
+        "choice1": "Neville Chamberlain",
+        "choice2": "Clement Attlee",
+        "choice3": "Winston Churchill",
+        "choice4": "Stanley Baldwin",
+        "answer": "1"
+    },
+    {
+        "question":"Which president erased the national debt of the United States?",
+        "choice1": "John F. Kennedy",
+        "choice2": "Ronald Reagan",
+        "choice3": "Andrew Jackson",
+        "choice4": "Franklin Roosevelt",
+        "answer": "3"
+    },
+    {
+        "question":"Who was the only president to not be in office in Washington D.C?",
+        "choice1": "George Washington",
+        "choice2": "Abraham Lincoln",
+        "choice3": "Richard Nixon",
+        "choice4": "Thomas Jefferson",
+        "answer": "1"
+    },
+    {
+        "question":"What event marked the start of World War II?",
+        "choice1": "Invasion of Poland (1939)",
+        "choice2": "Invasion of Russia (1942)",
+        "choice3": "Battle of Britain (1940)",
+        "choice4": "Invasion of Normandy (1944)",
+        "answer": "1"
+    },
+    {
+        "question":"Which one of these was not a beach landing site in the Invasion of Normandy?",
+        "choice1": "Gold",
+        "choice2": "Silver",
+        "choice3": "Silver",
+        "choice4": "Diamond",
+        "answer": "2"
+    },
+    {
+        "question":"What disease crippled President Franklin D. Roosevelt and led him to help the nation find a cure? ",
+        "choice1": "Lassa Fver",
+        "choice2": "Meningitis",
+        "choice3": "Cancer",
+        "choice4": "Polio",
+        "answer": "4"
+    },
+    {
+        "question":"Which of these countries was sea charted in 1500 by the Portuguese maritime explorations?",
+        "choice1": "Madagascar",
+        "choice2": "India",
+        "choice3": "Brazil",
+        "choice4": "Mozambique",
+        "answer": "3"
+    },
+    {
+        "question":"In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
+        "choice1": "Joseph and Catherine",
+        "choice2": "John and Mary",
+        "choice3": "William and Elizabeth",
+        "choice4": "George and Anne",
+        "answer": "2"
+    },
+    {
+        "question":"Which German field marshal was known as the `Desert Fox`?",
+        "choice1": "Erwin Rommel",
+        "choice2": "Ernst Busch",
+        "choice3": "Wolfram Freiherr von Richthofen",
+        "choice4": "Wilhelm List",
+        "answer": "1"
+    },
+    {
+        "question":"Joseph Smith was the founder of what religion?",
+        "choice1": "Hinduism",
+        "choice2": "Christianity",
+        "choice3": "Buddhism",
+        "choice4": "Mormonism",
+        "answer": "4"
+    },
+    {
+        "question":"In what year did the Wall Street Crash take place?",
+        "choice1": "1929",
+        "choice2": "1930",
+        "choice3": "1931",
+        "choice4": "1932",
+        "answer": "1"
+    },
+    {
+        "question":"What was the capital of South Vietnam before the Vietnam War?",
+        "choice1": "Hanoi",
+        "choice2": "Ho Chi Minh City",
+        "choice3": "Saigon",
+        "choice4": "Hue",
+        "answer": "3"
+    },
+    {
+        "question":"What was the name of the spy ring that helped the United States win the Revolutionary War?",
+        "choice1": "Culper Ring",
+        "choice2": "New York Spy Ring",
+        "choice3": "Washington's Spies",
+        "choice4": "Unnamed",
+        "answer": "1"
+    },
+    {
+        "question":"Who was the first explorer to sail to North America?",
+        "choice1": "Christopher Columbus",
+        "choice2": "Leif Erikson",
+        "choice3": "Amerigo Vespucci",
+        "choice4": "Ferdinand Magellan",
+        "answer": "2"
+    },
+    {
+        "question":"Which of his six wives was Henry VIII married to the longest?",
+        "choice1": "Catherine of Aragon",
+        "choice2": "Anne Boleyn",
+        "choice3": "Jane Seymour",
+        "choice4": "Catherine Parr",
+        "answer": "1"
+    },
+    {
+        "question":"Which of the following ancient Near Eastern peoples still exists as a modern ethnic group?",
+        "choice1": "Assyrians",
+        "choice2": "Babylonians",
+        "choice3": "Hittites",
+        "choice4": "Elamites",
+        "answer": "1"
+    },
+    {
+        "question":"Which of the following African countries was most successful in resisting colonization?",
+        "choice1": "Nigeria",
+        "choice2": "Congo",
+        "choice3": "Ethopia",
+        "choice4": "Egypt",
+        "answer": "4"
+    },
+    {
+        "question":"The Herero genocide was perpetrated in Africa by which of the following colonial nations?",
+        "choice1": "France",
+        "choice2": "Belgium",
+        "choice3": "Britain",
+        "choice4": "Germany",
+        "answer": "4"
+    },
+    {
+        "question":"All of the following are names of the Seven Warring States EXCEPT?",
+        "choice1": "Qin (秦)",
+        "choice2": "Zhao (趙)",
+        "choice3": "Zhai (翟)",
+        "choice4": "Qi (齊)",
+        "answer": "3"
+    },
+    {
+        "question":"List the following Iranic empires in chronological order:",
+        "choice1": "Median, Achaemenid, Sassanid, Parthian",
+        "choice2": "Median, Achaemenid, Parthian, Sassanid",
+        "choice3": "Achaemenid, Median, Parthian, Sassanid",
+        "choice4": "Achaemenid, Median, Sassanid, Parthian",
+        "answer": "2"
+    },
+    {
+        "question":"When was the United States National Security Agency established?",
+        "choice1": "July 1, 1973",
+        "choice2": "July 26, 1908",
+        "choice3": "November 4, 1952",
+        "choice4": "November 25, 2002",
+        "answer": "3"
+    },
+    {
+        "question":"On which day did ARPANET suffer a 4 hour long network crash?",
+        "choice1": "October 27, 1980",
+        "choice2": "November 21, 1969",
+        "choice3": "October 29, 1969",
+        "choice4": "December 9, 1991",
+        "answer": "1"
+    }
+]

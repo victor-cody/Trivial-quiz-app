@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
+import ProtectedRoute from "./auth/protected-route";
 //jQuery
 // import jQuery from './assets/jquery/JQUERY'
 //bootstrap
@@ -22,13 +23,18 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
 
-  const { isLoading } = useAuth0();
+  const { isLoading, error } = useAuth0();
 
   if (isLoading) {
     return (
         <h2>Loading</h2>
     )
   }
+
+  if (error) {
+    return <div>Oops... {error.message}</div>;
+  }
+
   return (
     <>
       <GameProvider>
@@ -39,7 +45,7 @@ function App() {
               {/* <Route path="/auth/sign-up" component={SignUpForm} />
             <Route path="/auth/login" component={LoginForm} /> */}
               <Route path="/categories" component={PreGame} />
-              <Route path="/game" component={Game} />
+            <ProtectedRoute path="/game" component={Game} />
             </Switch>
           </div>
           <Footer/>

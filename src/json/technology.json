@@ -1,0 +1,179 @@
+[
+    {
+      "question":"Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+      "choice1": "Atari",
+      "choice2": "Apple",
+      "choice3": "Microsoft",
+      "choice4": "Commodore",
+      "answer": "2"
+    },
+    {
+        "question":"In any programming language, what is the most common way to iterate through an array?",
+        "choice1": "Statements",
+        "choice2": "Do-while Loops",
+        "choice3": "For loops",
+        "choice4": "While loops",
+        "answer": "3"
+    },
+    {
+        "question":"What does CPU stand for?",
+        "choice1": "Central Process Unit",
+        "choice2": "Computer Personal Unit",
+        "choice3": "Central Processor Unit",
+        "choice4": "Central Processing Unit",
+        "answer": "4"
+    },
+    {
+        "question":"According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+        "choice1": "500",
+        "choice2": "1000",
+        "choice3": "1024",
+        "choice4": "765",
+        "answer": "2"
+    },
+    {
+        "question":"What was the name of the security vulnerability found in Bash in 2014?",
+        "choice1": "Shellshock",
+        "choice2": "Heartbleed",
+        "choice3": "Bashbug",
+        "choice4": "Stagefright",
+        "answer": "1"
+    },
+    {
+        "question":"Whistler was the codename of which Microsoft Operating System?",
+        "choice1": "Windows XP",
+        "choice2": "Windows 7",
+        "choice3": "Windows 95",
+        "choice4": "Windows 2000",
+        "answer": "1"
+    },
+    {
+        "question":"Moore's law originally stated that the number of transistors on a microprocessor chip would double every...",
+        "choice1": "Four Years",
+        "choice2": "Three Years",
+        "choice3": "Two Years",
+        "choice4": "Year",
+        "answer": "4"
+    },
+    {
+        "question":"What does AD stand for in relation to Windows Operating Systems?",
+        "choice1": "Active Department",
+        "choice2": "Active Directory",
+        "choice3": "Alternative Drive",
+        "choice4": "Automated Database",
+        "answer": "2"
+    },
+    {
+        "question":"When was the programming language C# released?",
+        "choice1": "1998",
+        "choice2": "1999",
+        "choice3": "2000",
+        "choice4": "2001",
+        "answer": "3"
+    },
+    {
+        "question":"The programming language 'Swift' was created to replace what other programming language?",
+        "choice1": "C#",
+        "choice2": "Ruby",
+        "choice3": "C++",
+        "choice4": "Objective C",
+        "answer": "4"
+    },
+    {
+        "question":"What five letter word is the motto of the IBM Computer company?",
+        "choice1": "Think",
+        "choice2": "Click",
+        "choice3": "Pixel",
+        "choice4": "Logic",
+        "answer": "1"
+    },
+    {
+        "question":"Which computer hardware device provides an interface for all other connected devices to communicate?",
+        "choice1": "RAM",
+        "choice2": "CPU",
+        "choice3": "Motherboard",
+        "choice4": "Hard Disk Drive",
+        "answer": "3"
+    },
+    {
+        "question":"In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
+        "choice1": "Public",
+        "choice2": "Private",
+        "choice3": "Static",
+        "choice4": "Final",
+        "answer": "4"
+    },
+    {
+        "question":"Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+        "choice1": "C",
+        "choice2": "Java",
+        "choice3": "C#",
+        "choice4": "Objective C",
+        "answer": "3"
+    },
+    {
+        "question":"Which of the following cellular device companies is NOT headquartered in Asia?",
+        "choice1": "Nokia",
+        "choice2": "LG",
+        "choice3": "Samsung",
+        "choice4": "HTC",
+        "answer": "1"
+    },
+    {
+        "question":"Which round does a WW2 M1 Garand fire?",
+        "choice1": ".30-06",
+        "choice2": ".308",
+        "choice3": "7.62",
+        "choice4": "7.62x51mm",
+        "answer": "1"
+    },
+    {
+        "question":"What are the base station trackers used for the HTC Vive called?",
+        "choice1": "Trackers",
+        "choice2": "Lighthouse",
+        "choice3": "Motion",
+        "choice4": "Constellation",
+        "answer": "2"
+    },
+    {
+        "question":"The communication protocol NFC stands for?",
+        "choice1": "Near Field Communication",
+        "choice2": "Nearby Force Control",
+        "choice3": "Near-Field Control",
+        "choice4": "National Field Commision",
+        "answer": "1"
+    },
+    {
+        "question":"Which buzzword did Apple Inc. use to describe their removal of the headphone jack?",
+        "choice1": "Revolution",
+        "choice2": "Innovation",
+        "choice3": "Courage",
+        "choice4": "Bravery",
+        "answer": "3"
+    },
+    {
+        "question":"What does the Prt Sc button do?",
+        "choice1": "Captures what's on the screen and copies it to your clipboard",
+        "choice2": "Nothing",
+        "choice3": "Saves a .png file of what's on the screen in your screenshots folder in photos",
+        "choice4": "Closes all windows",
+        "answer": "1"
+    },
+    {
+        "question":"The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called?",
+        "choice1": "HD Graphics 700",
+        "choice2": "HD Graphics 500",
+        "choice3": "HD Graphics 600",
+        "choice4": "HD Graphics 7000",
+        "answer": "2"
+    },
+    {
+        "question":"The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+        "choice1": "Taiwan",
+        "choice2": "United States",
+        "choice3": "China",
+        "choice4": "Germany",
+        "answer": "1"
+    }
+    
+]

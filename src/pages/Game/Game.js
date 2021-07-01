@@ -1,15 +1,16 @@
-	import { useContext, useEffect, useState } from "react";
-	import { useHistory } from "react-router";
-	import { useHarperDB } from "use-harperdb";
-	//Components
-	import ProgressBar from "../../components/ProgressBar/ProgressBar";
-	import GameOption from "../../components/game-option/GameOption";
-	import { GameContex } from "../../contex/GameContex";
-	import Countdown from "../../components/Countdown/Countdown";
-	//Hook
-	// import useAxios from '../../components/Hook';
+import { useContext, useEffect, useState } from "react";
+import { useHistory } from "react-router";
+import { useHarperDB } from "use-harperdb";
+//Components
+import ProfileImage from '../../components/user-profile-image/ProfileImage';
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import GameOption from "../../components/game-option/GameOption";
+import { GameContex } from "../../contex/GameContex";
+import Countdown from "../../components/Countdown/Countdown";
+//Hook
+// import useAxios from '../../components/Hook';
 
-	const Game = () => { 
+const Game = () => {
 	const history = useHistory();
 
 	//States
@@ -23,189 +24,209 @@
 	const [timerID, setTimerID] = useState(null);
 
 	const { chosenCategory, BONUS, MAX_QUESTIONS, QUESTION_TIME } =
-	useContext(GameContex);
+		useContext(GameContex);
 
 	console.log(chosenCategory);
 	// Querying the database
 	const [data, loading, error] = useHarperDB({
-	query: {
-		operation: "sql",
-		sql: `SELECT * FROM questions.${chosenCategory}`
-	},
+		query: {
+			operation: "sql",
+			sql: `SELECT * FROM questions.${chosenCategory}`
+		},
 	});
 
-	let availableQuestions = [];
+	// let availableQuestions = [];
 
 	console.log(data);
 
 	function startGame() {
 
-	// setAvailableQuestions(data);
-	availableQuestions = Array.from(data);
-	console.log(availableQuestions);
-	getNewQuestion();
-	setScore(0);
-	setQuestionCounter(0);
-	setTimerID(setInterval(countDownTime, 1000));
+		// setAvailableQuestions(data);
+		// availableQuestions = Array.from(data);
+		console.log(data[0]);
+		getNewQuestion();
+		setScore(0);
+		setQuestionCounter(0);
+		setTimerID(setInterval(countDownTime, 1000));
 	}
 
 	function getNewQuestion() {
-	//Go to end game page if all questions have been rendered
-	if (data?.length === 0 && questionCounter >= MAX_QUESTIONS) {
-		// localStorage.setItem("mostRecentScore", score);
-		// localStorage.setItem("maxScore", MAX_QUESTIONS * BONUS);
-		return history.push("/end");
-	}
+		//Go to end game page if all questions have been rendered
+		if (data?.length === 0 && questionCounter >= MAX_QUESTIONS) {
+			// localStorage.setItem("mostRecentScore", score);
+			// localStorage.setItem("maxScore", MAX_QUESTIONS * BONUS);
+			return history.push("/end");
+		}
 
-	//else, first hide the next button
-	setShowNextButton(false);
+		//else, first hide the next button
+		setShowNextButton(false);
 
-	//then select and render random question from questions array
-	setQuestionCounter((prev) => prev++);
-	const questionIndex = Math.floor(Math.random() * data.length);
+		//then select and render random question from questions array
+		setQuestionCounter((prev) => prev++);
+		const questionIndex = Math.floor(Math.random() * data.length);
 
-	console.log(`this is the index \n ${[questionIndex]}`);
+		console.log(`this is the index \n ${[questionIndex]}`);
 
-	setcurrentQuestion(data[questionIndex]);
+		setcurrentQuestion(data[questionIndex]);
 
-	console.log(`the current question is ${currentQuestion}`);
+		console.log(`the current question is ${currentQuestion}`);
 
-	console.log(`this is the question \n ${data[questionIndex]}`);
+		console.log(`this is the question \n ${data[questionIndex]}`);
 
-	//Remove just rendered question from the question array
-	[data].splice(questionIndex, 1)
-	console.log(`this is the available questions \n ${[data]}`);
-	//Start the count down
-	setCountDown(true);
+		//Remove just rendered question from the question array
+		data.splice(questionIndex, 1)
+		console.log(`this is the available questions \n ${[data.length]}`);
+		//Start the count down
+		setCountDown(true);
 	}
 
 	//Timer function
 	const countDownTime = () => {
-	if (countDown === true && timer <= QUESTION_TIME) {
-		setTimer((prev) => prev++);
-	} else {
-		setTimer(0);
-		// getNewQuestion();
-	}
+		if (countDown === true && timer <= QUESTION_TIME) {
+			setTimer((prev) => prev++);
+		} else {
+			setTimer(0);
+			// getNewQuestion();
+		}
 	};
 
 	//when a question choice is clicked
 	const evaluateChoice = (e) => {
-	if (!countDown) return;
+		if (!countDown) return;
 
-	// pausing the countDown
-	setCountDown(false);
-	clearInterval(timerID);
+		// pausing the countDown
+		setCountDown(false);
+		clearInterval(timerID);
 
-	const selectedChoice = e.target;
-	const correctAnswer = document.querySelector(
-		`p[data-choicenumber = "${currentQuestion.correct}"]`
-	);
+		const selectedChoice = e.target;
+		const correctAnswer = document.querySelector(
+			`p[data-choicenumber = "${currentQuestion.correct}"]`
+		);
 
-	//Check if selected answer is wrong or right and apply corresponding class style
-	if (selectedChoice.dataset["choicenumber"] === currentQuestion.correct) {
-		selectedChoice.classList.add("correct");
-		setScore(BONUS);
-	} else {
-		selectedChoice.classList.add("incorrect");
+		//Check if selected answer is wrong or right and apply corresponding class style
+		if (selectedChoice.dataset["choicenumber"] === currentQuestion.correct) {
+			selectedChoice.classList.add("correct");
+			setScore(BONUS);
+		} else {
+			selectedChoice.classList.add("incorrect");
+			setTimeout(() => {
+				correctAnswer.classList.add("correct");
+			}, 1200);
+		}
+
+		//show next question button
 		setTimeout(() => {
-		correctAnswer.classList.add("correct");
-		}, 1200);
-	}
-
-	//show next question button
-	setTimeout(() => {
-		setShowNextButton(true);
-	}, 2000);
+			setShowNextButton(true);
+		}, 2000);
 	};
 
-		useEffect(() => {
+	useEffect(() => {
 
-			startGame()
+		startGame()
 
-			return () => {
-				const abort = new AbortController();
-				abort.abort();
-			};
-		}, [chosenCategory]);
+		return () => {
+			const abort = new AbortController();
+			abort.abort();
+		};
+	}, [chosenCategory]);
 
-	return (
-		
-		<div className="container">
-				{loading && (
-		<h2>Loading...</h2>
-	) }
 
-	{(data && data.length > 0) && (
-		<div className="container">
-		<section>
-			<h2 className="text-center text-title h1" >{chosenCategory}</h2>
-
-			< header className = "header row align-items-center justify-content-between" >
-			<div className="d-flex align-items-center justify-content-between flex-column col-md-4">
-				<p className="counter text-center h2">
-				Question {questionCounter}/{MAX_QUESTIONS}{" "}
-				</p>
-				<ProgressBar counter={questionCounter} />
+	if (loading) {
+		return (
+			<div className="container">
+				<h2>Loading...</h2>
 			</div>
-
-			<div className="d-flex align-items-center justify-content-between  flex-column col-md-4">
-				<p className="text-center h2">Score</p>
-				<h2 className="score display-3 font-weight-bold">{score}</h2>
-			</div>		
-			</header>
-
-			{
-			// 		console.log(`the current question is now ${JSON.stringify(currentQuestion)}`, availableQuestions)
-		
-			// ( currentQuestion && Object.entries(currentQuestion?.answers).map((answer, id) => (
-			// 	<GameOption
-			// 	key={"choice" + id}
-			// 	option={answer[0]}
-			// 	text={answer[1]}
-			// 	id={id}
-			// 	callback={evaluateChoice}
-			// 	/>
-
-			// )))
-			}
-
-			<Countdown counter={timer} />
-
-			{showNextButton && (
-			<button
-				className="col-sm-7 a text-capitalize font-weight-bold btn mt-3 mb-1"
-				onClick={(e) => {
-				e.preventDefault();
-				// removing the 'correct' and 'incorrect' class from each of the options element
-				[
-					...document.getElementsByClassName("choice-container"),
-				].forEach((element) => {
-					element.classList.remove("correct");
-					element.classList.remove("incorrect");
-				});
-				// getting a new question
-				getNewQuestion();
-				}}
-			>
-				continue
-			</button>
-			)}
-		</section>
-		</div>
-	)}
-
-	 {
-		 error && (
-		<>
-		<div>There was an error</div>
-		{console.log(error)}
-		</>
-	)
+		)
 	}
-		</div>
-	) 
-	
-	};
 
-	export default Game;
+
+	if (error) {
+		return (
+			<>
+				<div>There was an error</div>
+				{console.log(error)}
+			</>
+		)
+	}
+
+
+	if (data && data.length > 0) {
+		return (
+			<div className="container">
+				<section>
+
+					< header className="header d-flex flex-column h-100 justify-content-between" >
+						<div className="d-flex justify-content-between align-items-center">
+							<h2 className="text-center text-title h1" >{chosenCategory}</h2>
+							<ProfileImage/>
+						</div>
+						<div className="row align-items-center justify-content-between">
+							<div className="d-flex align-items-center justify-content-between flex-column col-md-4">
+								<p className="counter text-center h2">
+									Question {questionCounter}/{MAX_QUESTIONS}{" "}
+								</p>
+								<ProgressBar counter={questionCounter} />
+							</div>
+
+							
+
+							<div className="d-flex align-items-center justify-content-between  flex-column col-md-4">
+								<p className="text-center h2">Score</p>
+								<h2 className="score display-3 font-weight-bold">{score}</h2>
+							</div>
+						</div>
+					</header>
+
+					<p className="display-3 mb-3 mt-1">
+						{currentQuestion.question}
+					</p>
+
+					{
+								// console.log(`the current question is now ${JSON.stringify(currentQuestion)}`, availableQuestions)
+						( currentQuestion && Object.entries(currentQuestion?.answers).map((answer, id) => (
+							<GameOption
+							key={"choice" + id}
+							option={answer[0]}
+							text={answer[1]}
+							id={id}
+							callback={evaluateChoice}
+							/>
+
+						)))
+					}
+
+					<Countdown counter={timer} />
+
+					{showNextButton && (
+						<button
+							className="col-sm-7 a text-capitalize font-weight-bold btn mt-3 mb-1"
+							onClick={(e) => {
+								e.preventDefault();
+								// removing the 'correct' and 'incorrect' class from each of the options element
+								[
+									...document.getElementsByClassName("choice-container"),
+								].forEach((element) => {
+									element.classList.remove("correct");
+									element.classList.remove("incorrect");
+								});
+								// getting a new question
+								getNewQuestion();
+							}}
+						>
+							continue
+						</button>
+					)}
+				</section>
+			</div>
+		)
+	}
+	else {
+		return (
+			<span>Something is comming</span>
+		)
+	}
+
+
+};
+
+export default Game;
