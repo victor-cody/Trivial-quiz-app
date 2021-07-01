@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 //jQuery
 // import jQuery from './assets/jquery/JQUERY'
 //bootstrap
@@ -20,10 +21,18 @@ import Game from "./pages/Game/Game";
 import HomePage from "./pages/Homepage/Homepage";
 
 function App() {
+
+  const { isLoading } = useAuth0();
+
+  if (isLoading) {
+    return (
+        <h2>Loading</h2>
+    )
+  }
   return (
     <>
       <GameProvider>
-        <Router>
+      
           <div className="container">
             <Switch>
               <Route path="/" exact component={HomePage} />
@@ -34,7 +43,7 @@ function App() {
               <Route path="/game" component={Game} />
             </Switch>
           </div>
-        </Router>
+        
       </GameProvider>
     </>
   );
