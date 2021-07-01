@@ -6,7 +6,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import "./assets/bootstrap/bootstrap.min.css";
 import "./assets/bootstrap-icons/bootstrap-icons.css";
 //animations
-// import './assets/wow/wow.min.js'
 import "./assets/animate/animate.css";
 
 import "./assets/sass/_variables.scss";
@@ -19,6 +18,7 @@ import PreGame from "./components/Pre-Game/PreGame";
 import { GameProvider } from "./contex/GameContex";
 import Game from "./pages/Game/Game";
 import HomePage from "./pages/Homepage/Homepage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -32,7 +32,6 @@ function App() {
   return (
     <>
       <GameProvider>
-      
           <div className="container">
             <Switch>
               <Route path="/" exact component={HomePage} />
@@ -43,7 +42,7 @@ function App() {
               <Route path="/game" component={Game} />
             </Switch>
           </div>
-        
+          <Footer/>
       </GameProvider>
     </>
   );
